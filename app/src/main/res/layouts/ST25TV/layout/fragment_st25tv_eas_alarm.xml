@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/msgTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/eas_alarm_message" />
+
+
+    <RelativeLayout
+        android:id="@+id/easIdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/msgTextView"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/easIdCaptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eas_id"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/easIdTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/easIdCaptionTextView"
+            android:background="@color/st_light_blue"
+            android:gravity="top"
+            android:inputType="textCapCharacters"
+            android:digits="0123456789ABCDEF"
+            android:singleLine="true"
+            android:maxLength="4"
+            android:text=""/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/easTelegramLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/easIdLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/easTelegramCaptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eas_telegram"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/easTelegramTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/easTelegramCaptionTextView"
+            android:background="@color/st_light_blue"
+            android:gravity="top"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+            android:lines="2"
+            android:maxLength="32"
+            android:text=""/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/goToEasMenuTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Go to EAS menu to disable the Electronic Article Surveillance for this tag:"
+        />
+
+    <Button
+        android:id="@+id/goToEasMenuButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/relative_selector"
+        android:text="EAS Menu"
+        android:layout_below="@+id/goToEasMenuTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+</LinearLayout>

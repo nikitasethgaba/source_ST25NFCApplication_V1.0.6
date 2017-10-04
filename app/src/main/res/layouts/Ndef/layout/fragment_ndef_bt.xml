@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_ndef_bt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".generic.ndef.NDEFBtFragment" >
+
+
+    <RelativeLayout
+        android:id="@+id/ndef_fragment_bt_device_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ndef_fragment_bt_device_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:text="Device Name:"
+            android:textSize="@dimen/tag_header_txt_size" />
+
+        <EditText
+            android:id="@+id/ndef_fragment_bt_device_name"
+            android:layout_below="@id/ndef_fragment_bt_device_name_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/st_light_grey"
+            android:textColor="@color/st_dark_blue"
+            android:inputType="text"
+            android:lines="1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ndef_fragment_bt_mac_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ndef_fragment_bt_device_name_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ndef_fragment_bt_mac_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="MAC Addr :"
+            android:textSize="@dimen/tag_header_txt_size" />
+
+
+        <EditText
+            android:id="@+id/ndef_fragment_bt_mac"
+            android:layout_below="@id/ndef_fragment_bt_mac_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/st_light_grey"
+            android:textColor="@color/st_dark_blue"
+            android:inputType="text"
+            android:lines="1" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_view_bounded_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ndef_fragment_bt_mac_layout"
+        android:layout_marginTop="10dp">
+    </ListView>
+
+</RelativeLayout>

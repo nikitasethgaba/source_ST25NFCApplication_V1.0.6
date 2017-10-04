@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="ST25TA Features"
+        android:id="@+id/st25ta_features">
+        <menu>
+            <item
+                android:id="@+id/sys_file"
+                android:icon="@drawable/ic_perm_data_setting_black_24dp"
+                android:title="@string/system_file"/>
+            <item
+                android:id="@+id/memory_dump"
+                android:icon="@drawable/ic_memory_black_24dp"
+                android:title="@string/memory_content"/>
+            <item
+                android:id="@+id/security_status_management"
+                android:icon="@drawable/ic_security_black_24dp"
+                android:title="@string/security_status_management"/>
+            <item
+                android:id="@+id/counter_status_management"
+                android:icon="@drawable/ic_add_alarm_black_24dp"
+                android:title="@string/counter_configuration"/>
+        </menu>
+    </item>
+
+
+</menu>

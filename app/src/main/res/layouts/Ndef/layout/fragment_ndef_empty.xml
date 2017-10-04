@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_ndef_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize"
+    android:orientation="vertical"
+    tools:context=".generic.ndef.NDEFEmptyFragment" >
+
+    <TextView  android:id="@+id/ndef_fragment_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/Write_ndef_empty"
+        android:textSize="@dimen/tag_header_title_size" />
+
+</LinearLayout>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".type5.st25dv.ST25DVChangeMemConf">
+
+    <LinearLayout
+        android:id="@+id/topZoneLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/column1Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/msgTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/move_bottom_edge_to_change_area_sizes"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/msg2TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/area4_will_take_all_the_remaining_space"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/selectedAreaTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/selected_area"
+                android:gravity="center_horizontal"/>
+
+            <RadioGroup
+                android:id="@+id/selectedAreaRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/area1RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:gravity="left"
+                    android:text="@string/Area1"
+                    android:textColor="@color/st_dark_blue"/>
+
+                <RadioButton
+                    android:id="@+id/area2RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:gravity="left"
+                    android:text="@string/Area2"
+                    android:textColor="@color/st_dark_blue"/>
+
+                <RadioButton
+                    android:id="@+id/area3RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:gravity="left"
+                    android:text="@string/Area3"
+                    android:textColor="@color/st_dark_blue"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/fineTuningTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/fine_tuning_of_selected_area_end"
+                android:gravity="center_horizontal"/>
+
+            <Button
+                android:id="@+id/upButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_keyboard_arrow_up_black_24dp"/>
+
+            <Button
+                android:id="@+id/downButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/column2Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/areaRectanglesLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/area1TextView"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:text="Area 1"
+                    android:textColor="@color/white"
+                    android:background="@color/st_dark_blue"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/area2TextView"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:text="Area 2"
+                    android:textColor="@color/white"
+                    android:background="@color/st_light_purple"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/area3TextView"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:text="Area 3"
+                    android:textColor="@color/white"
+                    android:background="@color/st_light_green"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/area4TextView"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:text="Area 4"
+                    android:textColor="@color/white"
+                    android:background="@color/st_light_orange"
+                    android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!--***************  Table summarizing the current settings for this area  ****************-->
+    <TableLayout
+        android:id="@+id/summaryZoneLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:background="@color/white">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/st_light_blue">
+
+            <TextView
+                android:text=""
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:text="@string/size_in_bytes"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:text="@string/size_in_blocks"
+                android:layout_weight="1"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:text="@string/Area1"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/area1SizeInBytesTextView"
+                android:text=""
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/area1SizeInBlocksTextView"
+                android:text=""
+                android:layout_weight="1"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/st_very_light_blue">
+
+            <TextView
+                android:text="@string/Area2"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/area2SizeInBytesTextView"
+                android:text=""
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/area2SizeInBlocksTextView"
+                android:text=""
+                android:layout_weight="1"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:text="@string/Area3"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/area3SizeInBytesTextView"
+                android:text=""
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/area3SizeInBlocksTextView"
+                android:text=""
+                android:layout_weight="1"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/st_very_light_blue">
+
+            <TextView
+                android:text="@string/Area4"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/area4SizeInBytesTextView"
+                android:text=""
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/area4SizeInBlocksTextView"
+                android:text=""
+                android:layout_weight="1"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:text="@string/TOTAL"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/totalSizeInBytesTextView"
+                android:text=""
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/totalSizeInBlocksTextView"
+                android:text=""
+                android:layout_weight="1"
+                android:gravity="center"/>
+        </TableRow>
+
+    </TableLayout>
+
+ </LinearLayout>

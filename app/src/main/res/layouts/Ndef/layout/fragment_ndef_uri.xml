@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/fragment_ndef_uri"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="?attr/actionBarSize"
+        >
+
+        <Spinner
+            android:id="@+id/ndef_fragment_uri_title"
+            android:layout_width="@dimen/ndef_frag_spinner_max_width"
+            android:layout_height="wrap_content"
+            android:background="@color/st_very_light_blue"
+            android:spinnerMode="dropdown"
+            android:prompt="@string/uri_id_code_title"
+            />
+
+        <EditText
+            android:id="@+id/ndef_fragment_uri_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ndef_fragment_uri_title"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/ndef_fragment_uri_title"
+            android:gravity="top"
+            android:inputType="textUri|textMultiLine"
+            android:scrollHorizontally="true"
+            android:text="@string/st_uri"
+            android:background="@color/st_very_light_blue"
+            android:textColor="@color/st_dark_blue"/>
+
+</RelativeLayout>
+

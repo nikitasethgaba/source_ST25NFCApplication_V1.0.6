@@ -1,0 +1,282 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sys_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sys_type4_header_fragment_container"
+        >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/sys_file_type4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sys_type4_header_fragment_container"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/rl_sys_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/tag_sys_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/system_file_length"
+            android:textSize="@dimen/tag_info_header_size"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+
+        <TextView
+            android:id="@+id/sys_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tag_sys_length"
+            android:layout_alignBottom="@+id/tag_sys_length"
+            android:layout_toRightOf="@+id/tag_sys_length"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/tag_info_text_size"
+            android:text="filled at runtime"
+            android:typeface="sans" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_sys_i2c_protected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_sys_length">
+        <TextView
+            android:id="@+id/tag_sys_i2c_protected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/i2c_protection"
+            android:textSize="@dimen/tag_info_header_size"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/sys_i2c_protected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tag_sys_i2c_protected"
+            android:layout_alignBottom="@+id/tag_sys_i2c_protected"
+            android:layout_toRightOf="@+id/tag_sys_i2c_protected"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/tag_info_text_size"
+            android:text="filled at runtime"
+            android:typeface="sans" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sys_i2c_watchdog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_sys_i2c_protected">
+        <TextView
+            android:id="@+id/tag_sys_i2c_watchdog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/i2c_watchdog"
+            android:textSize="@dimen/tag_info_header_size"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/sys_i2c_watchdog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tag_sys_i2c_watchdog"
+            android:layout_alignBottom="@+id/tag_sys_i2c_watchdog"
+            android:layout_toRightOf="@+id/tag_sys_i2c_watchdog"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/tag_info_text_size"
+            android:text="filled at runtime"
+            android:typeface="sans" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sys_gpo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_sys_i2c_watchdog">
+        <TextView
+            android:id="@+id/tag_sys_gpo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/gpo"
+            android:textSize="@dimen/tag_info_header_size"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/sys_gpo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tag_sys_gpo"
+            android:layout_toRightOf="@+id/tag_sys_gpo"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/tag_info_text_size"
+            android:text="filled at runtime"
+            android:typeface="sans" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sys_rf_enabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_sys_gpo">
+        <TextView
+            android:id="@+id/tag_sys_rf_enabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/rf_enable"
+            android:textSize="@dimen/tag_info_header_size"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/sys_rf_enabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tag_sys_rf_enabled"
+            android:layout_alignBottom="@+id/tag_sys_rf_enabled"
+            android:layout_toRightOf="@+id/tag_sys_rf_enabled"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/tag_info_text_size"
+            android:text="filled at runtime"
+            android:typeface="sans" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_sys_memory_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_sys_rf_enabled">
+        <TextView
+            android:id="@+id/tag_sys_memory_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/Memory_size"
+            android:textSize="@dimen/tag_info_header_size"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/sys_memory_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tag_sys_memory_size"
+            android:layout_alignBottom="@+id/tag_sys_memory_size"
+            android:layout_toRightOf="@+id/tag_sys_memory_size"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/tag_info_text_size"
+            android:text="filled at runtime"
+            android:typeface="sans" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sys_ndef_file_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_sys_memory_size">
+        <TextView
+            android:id="@+id/tag_sys_ndef_file_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/ndef_file_number"
+            android:textSize="@dimen/tag_info_header_size"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/sys_ndef_file_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tag_sys_ndef_file_number"
+            android:layout_alignBottom="@+id/tag_sys_ndef_file_number"
+            android:layout_toRightOf="@+id/tag_sys_ndef_file_number"
+            android:layout_marginLeft="5dp"
+            android:text="filled at runtime"
+            android:textSize="@dimen/tag_info_text_size" />
+        </RelativeLayout>
+
+
+        <!-- UID -->
+
+        <RelativeLayout
+            android:id="@+id/rl_sys_uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_sys_ndef_file_number">
+        <TextView
+            android:id="@+id/tag_sys_uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/UID"
+            android:textSize="@dimen/tag_info_header_size"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tag_sys_uid"
+            android:layout_alignBottom="@+id/tag_sys_uid"
+            android:layout_toRightOf="@+id/tag_sys_uid"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/tag_info_text_size"
+            android:text="filled at runtime"
+            android:typeface="sans" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sys_product_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_sys_uid">
+        <TextView
+            android:id="@+id/tag_sys_product_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/Product_Code"
+            android:textSize="@dimen/tag_info_text_size"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/product_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tag_sys_product_code"
+            android:layout_toRightOf="@+id/tag_sys_product_code"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/tag_info_text_size"
+            android:text="filled at runtime"
+            android:typeface="sans" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

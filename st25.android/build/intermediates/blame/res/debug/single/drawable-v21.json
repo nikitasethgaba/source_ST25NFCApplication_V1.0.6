@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/nikitaseth/Downloads/source_ST25NFCApplication_V1.0.6/st25.android/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/nikitaseth/.android/build-cache/f84e46fbab79d3216693f261496272342e6e0711/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/nikitaseth/Downloads/source_ST25NFCApplication_V1.0.6/st25.android/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/nikitaseth/.android/build-cache/f84e46fbab79d3216693f261496272342e6e0711/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/nikitaseth/Downloads/source_ST25NFCApplication_V1.0.6/st25.android/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/nikitaseth/.android/build-cache/f84e46fbab79d3216693f261496272342e6e0711/output/res/drawable-v21/abc_btn_colored_material.xml"
+    }
+]

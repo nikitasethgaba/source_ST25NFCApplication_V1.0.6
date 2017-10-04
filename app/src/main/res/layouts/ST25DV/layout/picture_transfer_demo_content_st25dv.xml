@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:id="@+id/picture_transfer_demo_content_st25dv"
+    android:layout_height="match_parent"
+    tools:context=".type5.st25dv.ST25DVPictureTransferDemoActivity"
+    >
+
+
+    <ListView
+        android:id="@+id/picture_transfer_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tag_header_title_size"
+        android:orientation="vertical">
+
+    </ListView>
+
+    <include layout="@layout/transfer_tasks_st25dv" />
+
+</LinearLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    >
+
+	<include layout="@layout/tag_header_info"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		/>
+	<RelativeLayout
+		android:id="@+id/XX_file_retrieval_ongoing"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tag_header_info"
+		android:visibility="gone"
+		android:layout_marginTop="@dimen/tag_info_top_margin"
+		>
+		<TextView
+			android:id="@+id/tag_XX_retrieval_ongoing"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:typeface="sans"
+			android:textStyle="bold"
+			android:text="@string/InformationRetrievalOnGoing"
+			android:layout_marginTop="20dp"
+			android:textSize="@dimen/tag_info_header_size" />
+
+	</RelativeLayout>
+	<RelativeLayout
+		android:id="@+id/cc_file_not_available"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tag_header_info"
+		android:visibility="gone"
+		android:layout_marginTop="@dimen/tag_info_top_margin"
+		>
+		<TextView
+			android:id="@+id/tag_cc_information"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:typeface="sans"
+			android:textStyle="bold"
+			android:text="@string/CCFileNotAvailable"
+			android:layout_marginTop="20dp"
+			android:textSize="@dimen/tag_info_header_size" />
+
+	</RelativeLayout>
+	<RelativeLayout
+		android:id="@+id/cc_file"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tag_header_info"
+		android:layout_marginTop="@dimen/tag_info_top_margin"
+		>
+
+
+
+
+   	    <!-- CC File Length -->
+	    <TextView
+    	    android:id="@+id/tag_cc_length"
+        	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+    	    android:layout_alignParentLeft="true"
+        	android:typeface="sans"
+        	android:textStyle="bold"
+		    android:text="@string/CCLEN"
+			android:layout_marginTop="40dp"
+    	    android:textSize="@dimen/tag_info_header_size" />
+
+	    <TextView
+    	    android:id="@+id/cc_length"
+        	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_alignBaseline="@+id/tag_cc_length"
+			android:layout_alignBottom="@+id/tag_cc_length"
+			android:layout_toRightOf="@+id/tag_cc_length"
+        	android:typeface="sans"
+    	    android:textSize="@dimen/tag_info_text_size" />
+
+	    <!-- Magic number -->
+	    <TextView
+    	    android:id="@+id/tag_cc_magic_number"
+        	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+    	    android:layout_alignParentLeft="true"
+			android:layout_below="@+id/tag_cc_length"
+        	android:typeface="sans"
+        	android:textStyle="bold"
+		    android:text="@string/Magic_Number"
+    	    android:textSize="@dimen/tag_info_header_size" />
+
+	    <TextView
+    	    android:id="@+id/cc_magic_number"
+        	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_alignBaseline="@+id/tag_cc_magic_number"
+			android:layout_alignBottom="@+id/tag_cc_magic_number"
+			android:layout_toRightOf="@+id/tag_cc_magic_number"
+        	android:typeface="sans"
+    	    android:textSize="@dimen/tag_info_text_size" />
+	    
+   	    <!-- Mapping Version -->
+	    <TextView
+    	    android:id="@+id/tag_cc_mapping_version"
+        	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+    	    android:layout_alignParentLeft="true"
+			android:layout_below="@+id/tag_cc_magic_number"
+        	android:typeface="sans"
+        	android:textStyle="bold"
+		    android:text="@string/Mapping_Version"
+    	    android:textSize="@dimen/tag_info_header_size" />
+
+	    <TextView
+    	    android:id="@+id/cc_mapping_version"
+        	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_alignBaseline="@+id/tag_cc_mapping_version"
+			android:layout_alignBottom="@+id/tag_cc_mapping_version"
+			android:layout_toRightOf="@+id/tag_cc_mapping_version"
+			android:typeface="sans"
+    	    android:textSize="@dimen/tag_info_text_size" />
+
+   	    <!-- Memory size -->
+	    <TextView
+    	    android:id="@+id/tag_cc_memory_size"
+        	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+    	    android:layout_alignParentLeft="true"
+			android:layout_below="@+id/tag_cc_mapping_version"
+        	android:typeface="sans"
+        	android:textStyle="bold"
+		    android:text="@string/Memory_size"
+    	    android:textSize="@dimen/tag_info_header_size" />
+
+	    <TextView
+    	    android:id="@+id/memory_size"
+        	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_alignBaseline="@+id/tag_cc_memory_size"
+			android:layout_alignBottom="@+id/tag_cc_memory_size"
+			android:layout_toRightOf="@+id/tag_cc_memory_size"
+			android:typeface="sans"
+    	    android:textSize="@dimen/tag_info_text_size" />
+
+   	    <!-- Read Access Rights -->
+	    <TextView
+    	    android:id="@+id/tag_cc_read_access"
+        	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+    	    android:layout_alignParentLeft="true"
+			android:layout_below="@+id/tag_cc_memory_size"
+        	android:typeface="sans"
+        	android:textStyle="bold"
+		    android:text="@string/Read_access"
+    	    android:textSize="@dimen/tag_info_header_size" />
+
+	    <TextView
+    	    android:id="@+id/cc_read_access"
+        	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_alignBaseline="@+id/tag_cc_read_access"
+			android:layout_alignBottom="@+id/tag_cc_read_access"
+			android:layout_toRightOf="@+id/tag_cc_read_access"
+			android:typeface="sans"
+    	    android:textSize="@dimen/tag_info_text_size" />
+   	    <!-- Write Access Rights -->
+	    <TextView
+    	    android:id="@+id/tag_cc_write_access"
+        	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+    	    android:layout_alignParentLeft="true"
+			android:layout_below="@+id/tag_cc_read_access"
+        	android:typeface="sans"
+        	android:textStyle="bold"
+		    android:text="@string/Write_access"
+    	    android:textSize="@dimen/tag_info_header_size" />
+
+	    <TextView
+    	    android:id="@+id/cc_write_access"
+        	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_alignBaseline="@+id/tag_cc_write_access"
+			android:layout_alignBottom="@+id/tag_cc_write_access"
+			android:layout_toRightOf="@+id/tag_cc_write_access"
+			android:typeface="sans"
+    	    android:textSize="@dimen/tag_info_text_size" />
+
+		</RelativeLayout>
+
+   	    <!--TO DO NdefSTMessage File Control ControlTlv -->
+
+</RelativeLayout>

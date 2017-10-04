@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:id="@+id/content_registers_st25dv"
+    tools:context=".generic.RegistersActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/infoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="@string/register_values_in_hex_format"/>
+
+        <ListView
+            android:id="@+id/config_register_list_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+        </ListView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="@string/tag_not_in_the_field"/>
+
+</RelativeLayout>

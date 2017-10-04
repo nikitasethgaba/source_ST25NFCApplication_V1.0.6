@@ -1,0 +1,23 @@
+apply plugin: 'java'
+
+allprojects {
+    targetCompatibility = 1.7
+    sourceCompatibility = 1.7
+
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['../../src/test']
+        }
+    }
+}
+
+dependencies {
+    compile project(':st25sdk')
+    compile 'org.apache.commons:commons-lang3:3.5'
+
+    compile 'junit:junit:4.12'
+    testCompile 'junit:junit:4.12'
+}

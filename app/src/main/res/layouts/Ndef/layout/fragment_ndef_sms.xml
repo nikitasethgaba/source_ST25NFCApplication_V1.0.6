@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_ndef_sms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".generic.ndef.NDEFSmsFragment">
+
+    <TextView
+        android:id="@+id/ndef_fragment_sms_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/Write_ndef_sms"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/tag_header_title_size" />
+
+    <RelativeLayout
+            android:id="@+id/ndef_fragment_sms_tel_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ndef_fragment_sms_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Tel" />
+
+            <EditText
+                android:id="@+id/call_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ndef_fragment_sms_tel"
+                android:background="@color/st_very_light_blue"
+                android:gravity="top"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLines="3" />
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/ndef_fragment_sms_msg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ndef_fragment_sms_msg_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Message" />
+
+            <EditText
+                android:id="@+id/ndef_fragment_sms_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ndef_fragment_sms_msg_title"
+                android:gravity="top"
+                android:imeOptions="actionDone"
+                android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+                android:background="@color/st_very_light_blue"
+                android:lines="10"
+                android:maxLines="15"
+                android:minLines="10" />
+    </RelativeLayout>
+
+</LinearLayout>

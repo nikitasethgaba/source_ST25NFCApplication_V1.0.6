@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="ST25DV02K-W Features"
+        android:id="@+id/st25dv02kw_features">
+        <menu>
+            <item
+                android:id="@+id/sys_file"
+                android:icon="@drawable/ic_perm_data_setting_black_24dp"
+                android:title="@string/system_file"/>
+            <item
+                android:id="@+id/memory_dump"
+                android:icon="@drawable/ic_memory_black_24dp"
+                android:title="@string/memory_content"/>
+
+            <item
+                android:id="@+id/register_management"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/register_management"/>
+
+            <item
+                android:id="@+id/configuration_protection"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/configuration_protection"/>
+
+            <item
+                android:id="@+id/configuration"
+                android:icon="@drawable/ic_memory_st_dark_blue_24dp"
+                android:title="@string/area_management"/>
+            <item
+                android:id="@+id/areas_ndef_editor"
+                android:icon="@drawable/ic_playlist_play_black_24dp"
+                android:title="@string/areas_content_editor" />
+            <item
+                android:id="@+id/area_security_status_management"
+                android:icon="@drawable/ic_security_black_24dp"
+                android:title="@string/area_security_status_management"/>
+
+            <item
+                android:id="@+id/pwm_rw_access_rights"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/pwm_access_rights"/>
+
+            <item
+                android:id="@+id/pwm_ctrl_configuration"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/pwm_control_config"/>
+
+            <item
+                android:id="@+id/pwm_ctrl"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/pwm_control_settings"/>
+
+            <item
+                android:id="@+id/lock_block_menu"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/lock_blocks" />
+
+
+
+        </menu>
+    </item>
+
+
+</menu>

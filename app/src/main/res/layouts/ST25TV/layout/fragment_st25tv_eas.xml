@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".type5.st25tv.ST25TVEasActivity">
+
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/eas_demo"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:typeface="serif"/>
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTextView"
+        android:layout_marginTop="10dp"
+        android:text="Once enabled, the Electronic Article Surveillance will trigger an alarm every times the tag is read by a NFC Gate (for exemple at the exit of a shop or library)"
+        android:layout_marginRight="10dp" />
+
+    <CheckBox
+        android:id="@+id/enableEasCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descriptionTextView"
+        android:text="@string/enable_eas"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/protectionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enableEasCheckBox"
+        android:layout_marginTop="10dp"
+        android:text="@string/eas_protection"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/protectionRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/protectionTextView"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp" >
+
+        <RadioButton
+            android:id="@+id/easNotProtectedRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:gravity="left"
+            android:text="@string/eas_not_protected" />
+
+        <RadioButton
+            android:id="@+id/easPwdProtectedRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:gravity="left"
+            android:text="@string/eas_pwd_protected" />
+
+        <RadioButton
+            android:id="@+id/easPermanentlyProtectedRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:gravity="left"
+            android:text="@string/eas_permanently_locked" />
+    </RadioGroup>
+
+
+    <RelativeLayout
+        android:id="@+id/easIdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/protectionRadioGroup"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/easIdTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eas_id_with_description"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/easIdEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/easIdTextView"
+            android:background="@color/st_light_blue"
+            android:gravity="top"
+            android:inputType="textCapCharacters"
+            android:digits="0123456789ABCDEF"
+            android:singleLine="true"
+            android:maxLength="4"
+            android:text=""/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/easTelegramLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/easIdLayout"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/easTelegramTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eas_telegram_with_description"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/easTelegramEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/easTelegramTextView"
+            android:background="@color/st_light_blue"
+            android:gravity="top"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+            android:lines="2"
+            android:maxLength="32"
+            android:text=""/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/updateTagButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/relative_selector"
+        android:text="@string/update_tag"
+        android:layout_below="@+id/easTelegramLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+
+</RelativeLayout>

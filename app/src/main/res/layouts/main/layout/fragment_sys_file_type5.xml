@@ -1,0 +1,224 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sys_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <include layout="@layout/tag_header_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <!--TextView
+        android:id="@+id/sys_file_ko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tag_header_system"
+        android:layout_marginTop="30dp"
+        android:text="Not available"
+        android:textSize="@dimen/tag_info_text_size"
+        android:typeface="sans" /-->
+
+    <!-- "Available" Relative Layout: includes all other fields -->
+
+    <RelativeLayout
+        android:id="@+id/sys_file_type5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tag_header_info"
+        android:layout_marginTop="@dimen/tag_info_top_margin"
+        >
+
+
+        <TextView
+            android:id="@+id/tag_sys_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/system_file_length"
+            android:textSize="@dimen/tag_info_header_size"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+
+        <TextView
+            android:id="@+id/sys_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tag_sys_length"
+            android:layout_alignBottom="@+id/tag_sys_length"
+            android:layout_toRightOf="@+id/tag_sys_length"
+            android:textSize="@dimen/tag_info_text_size"
+            android:typeface="sans" />
+
+        <!-- DSFID -->
+
+
+        <TextView
+            android:id="@+id/tag_sys_dsfid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tag_sys_length"
+            android:text="@string/storage_format_id"
+            android:textSize="@dimen/tag_info_header_size"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/sys_dsfid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tag_sys_dsfid"
+            android:layout_alignBottom="@+id/tag_sys_dsfid"
+            android:layout_toRightOf="@+id/tag_sys_dsfid"
+            android:textSize="@dimen/tag_info_text_size"
+            android:typeface="sans" />
+
+
+        <TextView
+            android:id="@+id/tag_sys_afi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tag_sys_dsfid"
+            android:text="@string/AFI"
+            android:textSize="@dimen/tag_info_header_size"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/sys_afi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tag_sys_afi"
+            android:layout_alignBottom="@+id/tag_sys_afi"
+            android:layout_toRightOf="@+id/tag_sys_afi"
+            android:textSize="@dimen/tag_info_text_size"
+            android:typeface="sans" />
+
+
+        <!-- memory map -->
+        <!-- Memory Size -->
+
+
+        <TextView
+            android:id="@+id/tag_sys_memory_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tag_sys_afi"
+            android:text="@string/Memory_size"
+            android:textSize="@dimen/tag_info_header_size"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/memory_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tag_sys_memory_size"
+            android:layout_alignBottom="@+id/tag_sys_memory_size"
+            android:layout_toRightOf="@+id/tag_sys_memory_size"
+            android:textSize="@dimen/tag_info_text_size"
+            android:typeface="sans" />
+
+
+        <TextView
+            android:id="@+id/tag_sys_blocks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tag_sys_memory_size"
+            android:text="@string/blocks"
+            android:textSize="@dimen/tag_info_header_size"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/blocks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tag_sys_blocks"
+            android:layout_alignBottom="@+id/tag_sys_blocks"
+            android:layout_toRightOf="@+id/tag_sys_blocks"
+            android:textSize="@dimen/tag_info_text_size"
+            android:typeface="sans" />
+
+
+        <TextView
+            android:id="@+id/tag_sys_bytes_per_blocks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tag_sys_blocks"
+            android:text="@string/bytes_per_block"
+            android:textSize="@dimen/tag_info_header_size"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/bytes_per_block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tag_sys_bytes_per_blocks"
+            android:layout_alignBottom="@+id/tag_sys_bytes_per_blocks"
+            android:layout_toRightOf="@+id/tag_sys_bytes_per_blocks"
+            android:textSize="@dimen/tag_info_text_size"
+            android:typeface="sans" />
+
+
+        <!-- UID -->
+
+
+        <TextView
+            android:id="@+id/tag_sys_uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tag_sys_bytes_per_blocks"
+            android:text="@string/UID"
+            android:textSize="@dimen/tag_info_header_size"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tag_sys_uid"
+            android:layout_alignBottom="@+id/tag_sys_uid"
+            android:layout_toRightOf="@+id/tag_sys_uid"
+            android:textSize="@dimen/tag_info_text_size"
+            android:typeface="sans" />
+
+
+        <TextView
+            android:id="@+id/tag_sys_product_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tag_sys_uid"
+            android:text="@string/Product_Code"
+            android:textSize="@dimen/tag_info_text_size"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/product_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tag_sys_product_code"
+            android:layout_alignBottom="@+id/tag_sys_product_code"
+            android:layout_toRightOf="@+id/tag_sys_product_code"
+            android:textSize="@dimen/tag_info_text_size"
+            android:typeface="sans" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

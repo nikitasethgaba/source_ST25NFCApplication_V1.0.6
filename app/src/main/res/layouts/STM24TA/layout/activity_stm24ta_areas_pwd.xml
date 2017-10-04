@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_areas_pwd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/areas_pwd_header_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></FrameLayout>
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text="@string/tap_on_a_area_to_set_its_permissions"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:typeface="serif"/>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleTextView"
+        android:orientation="vertical"
+        android:paddingTop="5dp">
+    </ListView>
+
+</LinearLayout>

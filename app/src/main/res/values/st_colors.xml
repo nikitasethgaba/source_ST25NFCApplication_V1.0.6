@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="st_dark_blue">#002052</color>
+    <color name="st_light_blue">#39a9dc</color>
+    <color name="st_very_light_blue">#d7eef8</color>
+    <color name="st_light_green">#bbcc00</color>
+    <color name="st_dark_green">#003d14</color>
+    <color name="st_light_purple">#d4007a</color>
+    <color name="st_dark_purple">#590d58</color>
+    <color name="st_light_orange">#ffd300</color>
+    <color name="st_dark_orange">#5c0915</color>
+    <color name="st_dark_grey">#4f5251</color>
+    <color name="st_middle_grey">#90989e</color>
+    <color name="st_light_grey">#b9c4ca</color>
+</resources>

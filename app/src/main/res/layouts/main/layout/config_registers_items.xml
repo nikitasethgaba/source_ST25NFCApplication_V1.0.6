@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/registerNameAndValueLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/registerNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="Filled at runtime"
+            android:layout_weight="5"/>
+
+        <ImageView
+            android:id="@+id/registerRightImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/read_write" />
+
+        <EditText
+            android:id="@+id/registerValueEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="0000"
+            android:gravity="center"
+            android:maxLength="4"
+            android:ems="4"
+            android:digits="0123456789ABCDEF"
+            android:inputType="textCapCharacters"
+            android:background="@color/st_light_blue"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/registerDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerNameAndValueLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentLeft="true"
+        android:text="Register descripption\nFilled at runtime"/>
+
+</RelativeLayout>

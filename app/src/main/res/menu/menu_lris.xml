@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="LRiS Features"
+        android:id="@+id/lris_features">
+        <menu>
+            <item
+                android:id="@+id/sys_file"
+                android:icon="@drawable/ic_perm_data_setting_black_24dp"
+                android:title="@string/system_file"/>
+            <item
+                android:id="@+id/memory_dump"
+                android:icon="@drawable/ic_memory_black_24dp"
+                android:title="@string/memory_content"/>
+            <item
+                android:id="@+id/sector_management"
+                android:icon="@drawable/ic_memory_black_24dp"
+                android:title="@string/sector_management"
+                />
+            <item
+                android:id="@+id/passwd_management"
+                android:icon="@drawable/ic_security_black_24dp"
+                android:title="@string/passwd_management" />
+
+        </menu>
+    </item>
+
+</menu>

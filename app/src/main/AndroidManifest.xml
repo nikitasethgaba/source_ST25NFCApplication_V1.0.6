@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.st.st25nfc">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_st25_transp"
+        android:label="@string/app_name"
+        android:logo="@drawable/logo_st25_transp"
+        android:supportsRtl="true"
+        android:theme="@style/STAppTheme.NoActionBar">
+        <activity
+            android:name="com.st.st25nfc.generic.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <data android:mimeType="application/vnd.wfa.wsc" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/filter_nfc" />
+        </activity>
+
+        <service
+            android:name="com.st.st25nfc.generic.MyHostApduService"
+            android:exported="true"
+            android:permission="android.permission.BIND_NFC_SERVICE">
+            <intent-filter>
+                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.cardemulation.host_apdu_service"
+                android:resource="@xml/apduservice" />
+        </service>
+
+        <activity
+            android:name="com.st.st25nfc.generic.CloningActivity"
+            android:label="CloningActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.generic.PreferredApplicationActivity"
+            android:label="PreferredApplicationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.stlri.STLRiActivity"
+            android:label="STLRi2kActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.stlri.STLRiS2kActivity"
+            android:label="STLRiS2kActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.stlri.STLRiS64kActivity"
+            android:label="STLRiS64kActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type4.stm24sr.STM24SRActivity"
+            android:label="STM24SRActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type4.GpoConfigActivity"
+            android:label="GPOActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type4.stm24tahighdensity.ST25TAHighDensityActivity"
+            android:label="ST25TAHighDensityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type4.st25ta.ST25TAActivity"
+            android:label="STM24SRActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.GenericType5TagActivity"
+            android:label="GenericType5TagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type4.GenericType4TagActivity"
+            android:label="GenericType4TagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.stm24lr.STM24LRSectorActivity"
+            android:label="STM24SectorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.stm24lr.STM24LRChangePwdActivity"
+            android:label="STM24LRChangePwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.stm24lr.STM24LR04Activity"
+            android:label="STM24SRActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.stm24lr.STM24LRActivity"
+            android:label="STM24LRActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25dv.ST25DVActivity"
+            android:label="ST25DVActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25tv.ST25TVActivity"
+            android:label="ST25TV02kActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25dv02kw.ST25DV02KWActivity"
+            android:label="ST25TV02kActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25dv02kw.ST25DV02KWPwmPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25dv02kw.ST25DV02KWChangePwmPermissionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25dv02kw.ST25DV02KWChangePwmDriveConfigActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25dv02kw.ST25DV02KWChangePwmDualityManagementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25dv02kw.ST25DV02KWPwmCtrlConfigurationActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.st.st25nfc.type5.st25dv02kw.ST25DV02KWPwmCtrlActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.stm24lr.STM24LRSectorLockActivity"
+            android:label="SectorEditorActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.generic.AreasEditorActivity"
+            android:label="AreasEditorActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type4.AreasListActivity"
+            android:label="STM24DieChangeMemConfActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type4.AreasPwdActivity"
+            android:label="STM24TAHighDensityPwdActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type4.AreasLockActivity"
+            android:label="STM24TAHighDensityLockActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.generic.ndef.NDEFEditorActivity"
+            android:label="NdefEditorActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.generic.ndef.NDEFActivity"
+            android:label="NDEFActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25dv.ST25DVMailboxActivity"
+            android:label="ST25DVMailboxActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25dv.ST25DVChangeMemConf"
+            android:label="ST25DVTemp"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25dv.ST25DVStopwatchDemoActivity"
+            android:label="ST25DVChronoDemoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25dv.ST25DVPictureTransferDemoActivity"
+            android:label="ST25DVPictureTransferDemoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25dv.ST25DVFirmwareUpdateDemoActivity"
+            android:label="ST25DVFirmwareUpdateTransferActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.generic.MemoryTestActivity"
+            android:label="MemoryTestActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.st.st25nfc.type5.st25dv.ST25DVMailboxDataTransferActivity"
+            android:label="ST25DVMailboxDataTransferActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.st.st25nfc.type5.st25dv.ST25DVChangeAreasPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25dv.ST25DVAreaSecurityStatusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25dv.ST25DVChangePermissionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25dv.ST25DVChangePwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25dv.ST25DVPresentPwdActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.st.st25nfc.generic.ReadFragmentActivity"
+            android:label="ReadFragmentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.generic.WriteFragmentActivity"
+            android:label="WriteFragmentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.generic.DumpMemoryFragmentActivity"
+            android:label="WriteFragmentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.generic.FillMemoryFragmentActivity"
+            android:label="WriteFragmentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25tv.ST25TVAreaSecurityStatusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.Type5ConfigurationProtectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25tv.ST25TVChangeMemConfActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25tv.ST25TVChangePermissionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25tv.ST25TVChangePwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25tv.ST25TVPresentPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25tv.ST25TVWriteCounterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25tv.ST25TVTamperDetectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25tv.ST25TVConfidentialModeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25tv.ST25TVKillTagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.st25tv.ST25TVEasActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.type5.Type5LockBlockActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.st.st25nfc.generic.RegistersActivity"
+            android:label="RegistersActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.st.st25nfc.type4.st25ta.CounterConfigActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

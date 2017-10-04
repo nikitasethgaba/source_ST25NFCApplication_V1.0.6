@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Help" >
+        <menu>
+            <item
+                android:id="@+id/preferred_application"
+                android:icon="@drawable/ic_apps_black_24dp"
+                android:title="@string/preferred_applications"/>
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/ic_help_outline_black_24dp"
+                android:title="@string/about"/>
+        </menu>
+    </item>
+
+</menu>

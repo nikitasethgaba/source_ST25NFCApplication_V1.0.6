@@ -1,0 +1,305 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sys_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <include layout="@layout/tag_header_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/pwmControlConfig"
+        android:layout_below="@+id/tag_header_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ctrlConfHeaderTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/pwm_control_config"
+            android:textSize="@dimen/tag_header_txt_size"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/pwm1TableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/pwmControlConfig"
+        android:stretchColumns="*"
+        >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/ValueEmptyTextView"
+                android:text="PWM1"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/ValueTextView"
+                android:background="@drawable/st_translucid_tableborder"
+                android:text="@string/Value" />
+
+            <TextView
+                android:id="@+id/RangeTextView"
+                android:background="@drawable/st_translucid_tableborder"
+                android:text="@string/Range" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/ResolutionTextView"
+                android:text="@string/Resolution"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+
+            <TextView
+                android:id="@+id/ResolutionValueTextView"
+                android:inputType="numberDecimal"
+                android:textSize="14sp"
+                android:text="62.5"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+            <TextView
+                android:id="@+id/RangeResolutionTextView"
+                android:text="> 0"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/EnableTextView"
+                android:text="@string/Enable"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+
+            <RadioButton
+                android:id="@+id/EnableValueRadioButton"
+                android:background="@drawable/st_translucid_tableborder"
+                android:textSize="14sp" />
+            <TextView
+                android:text=""
+                android:background="@drawable/st_translucid_tableborder"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/FreqTextView"
+                android:text="Freq"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+
+            <EditText
+                android:id="@+id/FreqValueEditText"
+                android:inputType="numberDecimal"
+                android:text="500"
+                android:textSize="14sp"
+                android:textColor="@color/st_dark_blue"
+                android:background="@drawable/st_light_blue_tableborder"/>
+            <TextView
+                android:id="@+id/RangeFreqTextView"
+                android:text="[488-31250]Hz"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/DutyCycleTextView"
+                android:text="Duty Cycle"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+
+            <EditText
+                android:id="@+id/DutyCycleValueEditText"
+                android:inputType="numberDecimal"
+                android:text="50"
+                android:textSize="14sp"
+                android:textColor="@color/st_dark_blue"
+                android:background="@drawable/st_light_blue_tableborder"
+                />
+            <TextView
+                android:id="@+id/RangeDutyCycleTextView"
+                android:text="[0-100]%"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/PulseWidthTextView"
+                android:text="PulseW"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+            <TextView
+                android:id="@+id/PulseWidthValueTextView"
+                android:text="X"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+            <TextView
+                android:text=""
+                android:background="@drawable/st_translucid_tableborder"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/PeriodTextView"
+                android:text="Period"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+            <TextView
+                android:id="@+id/PeriodValueTextView"
+                android:text="X"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+            <TextView
+                android:text=""
+                android:background="@drawable/st_translucid_tableborder"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/pwm2TableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/pwm1TableLayout"
+        android:stretchColumns="*">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/ValueEmptyTextView2"
+                android:text="PWM2"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+            <TextView
+                android:id="@+id/ValueTextView2"
+                android:text="@string/Value"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+            <TextView
+                android:id="@+id/RangeTextView2"
+                android:text="@string/Range"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/ResolutionTextView2"
+                android:text="@string/Resolution"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+
+            <TextView
+                android:id="@+id/ResolutionValueTextView2"
+                android:text="62.5"
+                android:background="@drawable/st_translucid_tableborder"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/RangeResolutionTextView2"
+                android:text="> 0"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/EnableTextView2"
+                android:text="@string/Enable"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+            <RadioButton
+                android:id="@+id/EnableValueRadioButton2"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+            <TextView
+                android:text=""
+                android:background="@drawable/st_translucid_tableborder"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/FreqTextView2"
+                android:text="Freq"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+
+            <EditText
+                android:id="@+id/FreqValueEditText2"
+                android:textColor="@color/st_dark_blue"
+                android:text="500"
+                android:background="@drawable/st_light_blue_tableborder"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/RangeFreqTextView2"
+                android:text="[488-31250]Hz"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/DutyCycleTextView2"
+                android:text="Duty Cycle"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+
+            <EditText
+                android:id="@+id/DutyCycleValueEditText2"
+                android:text="50"
+                android:textColor="@color/st_dark_blue"
+                android:background="@drawable/st_light_blue_tableborder"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/RangeDutyCycleTextView2"
+                android:text="[0-100]%"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/PulseWidthTextView2"
+                android:text="PulseW"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+            <TextView
+                android:id="@+id/PulseWidthValueTextView2"
+                android:background="@drawable/st_translucid_tableborder"
+                android:text="X"
+                />
+            <TextView
+                android:text=""
+                android:background="@drawable/st_translucid_tableborder"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/PeriodTextView2"
+                android:text="Period"
+                android:background="@drawable/st_translucid_tableborder"
+                />
+            <TextView
+                android:id="@+id/PeriodValueTextView2"
+                android:background="@drawable/st_translucid_tableborder"
+                android:text="Period"
+                />
+            <TextView
+                android:text=""
+                android:background="@drawable/st_translucid_tableborder"
+                />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

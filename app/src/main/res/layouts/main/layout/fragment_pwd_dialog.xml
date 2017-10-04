@@ -1,0 +1,599 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.st.st25nfc.generic.STType5PwdDialogFragment">
+
+    <RelativeLayout
+        android:id="@+id/messageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/messageTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:gravity="center"
+            android:singleLine="false"
+            android:textSize="15dp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:text="" />
+    </RelativeLayout>
+    <!--This layout containing Bytes 11 to 15 is visible only when the password is on 64 bits (8 Bytes)-->
+    <LinearLayout
+        android:id="@+id/pwdByte15To12Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/messageLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/byte15Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/byte15EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:digits="0123456789ABCDEF"
+                android:inputType="textCapCharacters"
+                android:text="00" />
+
+            <TextView
+                android:id="@+id/byte15CaptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Byte 15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/byte14Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/byte14EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:digits="0123456789ABCDEF"
+                android:inputType="textCapCharacters"
+                android:text="00" />
+
+            <TextView
+                android:id="@+id/byte14CaptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Byte 14" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/byte13Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/byte13EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:digits="0123456789ABCDEF"
+                android:inputType="textCapCharacters"
+                android:text="00" />
+
+            <TextView
+                android:id="@+id/byte13CaptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Byte 13" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/byte12Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/byte12EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:digits="0123456789ABCDEF"
+                android:inputType="textCapCharacters"
+                android:text="00" />
+
+            <TextView
+                android:id="@+id/byte12CaptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Byte 12" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--This layout containing Bytes 11 to 15 is visible only when the password is on 64 bits (8 Bytes)-->
+    <LinearLayout
+        android:id="@+id/pwdByte11To8Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pwdByte15To12Layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+    <LinearLayout
+            android:id="@+id/byte11Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/byte11EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:digits="0123456789ABCDEF"
+                android:inputType="textCapCharacters"
+                android:text="00" />
+
+            <TextView
+                android:id="@+id/byte11CaptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Byte 11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/byte10Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/byte10EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:digits="0123456789ABCDEF"
+                android:inputType="textCapCharacters"
+                android:text="00" />
+
+            <TextView
+                android:id="@+id/byte10CaptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Byte 10" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/byte9Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/byte9EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:digits="0123456789ABCDEF"
+                android:inputType="textCapCharacters"
+                android:text="00" />
+
+            <TextView
+                android:id="@+id/byte9CaptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Byte 9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/byte8Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/byte8EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:digits="0123456789ABCDEF"
+                android:inputType="textCapCharacters"
+                android:text="00" />
+
+            <TextView
+                android:id="@+id/byte8CaptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Byte 8" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--This layout containing Bytes 4 to 7 is visible only when the password is on 64 bits (8 Bytes)-->
+    <LinearLayout
+        android:id="@+id/pwdByte7To4Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pwdByte11To8Layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/byte7Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/byte7EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:digits="0123456789ABCDEF"
+                android:inputType="textCapCharacters"
+                android:text="00" />
+
+            <TextView
+                android:id="@+id/byte7CaptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Byte 7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/byte6Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/byte6EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:digits="0123456789ABCDEF"
+                android:inputType="textCapCharacters"
+                android:text="00" />
+
+            <TextView
+                android:id="@+id/byte6CaptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Byte 6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/byte5Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/byte5EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:digits="0123456789ABCDEF"
+                android:inputType="textCapCharacters"
+                android:text="00" />
+
+            <TextView
+                android:id="@+id/byte5CaptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Byte 5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/byte4Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/byte4EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:digits="0123456789ABCDEF"
+                android:inputType="textCapCharacters"
+                android:text="00" />
+
+            <TextView
+                android:id="@+id/byte4CaptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Byte 4" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pwdByte3To0Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pwdByte7To4Layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/byte3Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/byte3EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:digits="0123456789ABCDEF"
+                android:inputType="textCapCharacters"
+                android:text="00" />
+
+            <TextView
+                android:id="@+id/byte3CaptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Byte 3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/byte2Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/byte2EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:digits="0123456789ABCDEF"
+                android:inputType="textCapCharacters"
+                android:text="00" />
+
+            <TextView
+                android:id="@+id/byte2CaptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Byte 2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/byte1Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/byte1EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:digits="0123456789ABCDEF"
+                android:inputType="textCapCharacters"
+                android:text="00" />
+
+            <TextView
+                android:id="@+id/byte1CaptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Byte 1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/byte0Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/byte0EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:digits="0123456789ABCDEF"
+                android:inputType="textCapCharacters"
+                android:text="00" />
+
+            <TextView
+                android:id="@+id/byte0CaptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Byte 0" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/pwdButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pwdByte3To0Layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="@string/cancel">
+        </Button>
+
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="@string/ok" >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

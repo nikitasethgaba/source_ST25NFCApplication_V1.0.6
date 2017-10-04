@@ -1,0 +1,4 @@
+include ':app', ':st25sdk', ':st25.android', ':st25sdk_test'
+project(':st25sdk').projectDir = new File(settingsDir, 'st25sdk/build/android')
+project(':st25sdk_test').projectDir = new File(settingsDir, 'st25sdk/build/android_test')
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="wifi_security">
+        <item>OPEN</item>
+        <item>WPA/WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_encryptionType">
+        <item>NONE</item>
+        <item>TKIP</item>
+        <item>AES</item>
+    </string-array>
+</resources>

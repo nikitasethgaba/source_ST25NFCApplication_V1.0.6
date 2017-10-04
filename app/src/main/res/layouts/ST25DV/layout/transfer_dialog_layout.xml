@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="400dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/text_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image uploaded: "
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/image_uploaded"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+
+</LinearLayout>

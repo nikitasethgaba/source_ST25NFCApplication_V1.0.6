@@ -1,0 +1,86 @@
+apply plugin: 'java'
+
+allprojects {
+    targetCompatibility = 1.7
+    sourceCompatibility = 1.7
+
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['../../src/java']
+        }
+        resources {
+            srcDirs = ['../../libs/java']
+        }
+    }
+
+}
+
+// Override the javadoc task to use umlgraph doclet.  This depends on the presence
+// of GraphViz on the path in your environment (http://www.graphviz.org)
+
+task sdk_generate_javadoc(overwrite: true, dependsOn: build) {
+
+    setDescription('Generates Javadoc API documentation with UMLGraph diagrams')
+    setGroup(JavaBasePlugin.DOCUMENTATION_GROUP)
+
+    doLast {
+        def javaFilePath = file('../../src/java')
+        if (javaFilePath.exists()) {
+            ant.javadoc(
+                    sourcepath: file('../../src/java'),
+                    Doctitle: "ST25 SDK API",
+                    Windowtitle: "ST25 SDK ",
+                    bottom: "COPYRIGHT 2017 STMicroelectronics. All rights reserved.",
+                    packagenames: '*',
+                    destdir: "../../docs/javadoc/",
+                    private: 'true',
+                    docletpath: '../../docs/UmlGraph.jar',
+                    charset: 'UTF-8',
+                    encoding: 'UTF-8',
+                    classpath : configurations.jarLangFile.head().absoluteFile,
+                    docencoding: 'UTF-8',
+            ) {
+                doclet(name: 'org.umlgraph.doclet.UmlGraphDoc')
+                        {
+                            param(name: '-verbose')
+                            param(name: '-inferrel')
+                            param(name: '-use')
+                            param(name: '-inferrel')
+                            param(name: '-splitindex')
+                            param(name: '-qualify')
+                            param(name: '-postfixpackage')
+                            param(name: '-hide', value: 'java.*')
+                            param(name: '-collpackages', value: 'java.util.*')
+                            param(name: '-nodefontsize', value: '9')
+                            param(name: '-nodefontpackagesize', value: '7')
+                            param(name: '-edgecolor', value: '#002052')
+                            param(name: '-edgefontcolor', value: '#002052')
+                            param(name: '-nodefillcolor', value: '#39a9dc')
+                        }
+
+            }
+        } else {
+            print("!!! Cannot find source path !!!");
+        }
+    }
+}
+
+configurations {
+    jarLangFile
+}
+
+dependencies {
+    jarLangFile compile('org.apache.commons:commons-lang3:3.5')
+    compile fileTree(dir: '../../libs/java', include: ['*.jar'])
+}
+
+// tag::jar[]
+jar {
+    baseName = 'st25-sdk'
+    version =  '0.6.3'
+    setProperty("archivesBaseName", "$baseName$version")
+
+}

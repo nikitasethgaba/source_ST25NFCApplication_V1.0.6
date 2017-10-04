@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_ndef_aar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".generic.ndef.NDEFAarFragment">
+
+
+    <LinearLayout
+        android:id="@+id/ndef_fragment_aar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tag_info_text_size"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ndef_fragment_aar_selection_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="AAR: " />
+
+        <EditText
+            android:id="@+id/ndef_fragment_aar_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></EditText>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/appListButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/ndef_fragment_aar_layout"
+        android:onClick="getAppList"
+        android:text="@string/Get_Installed_App" />
+    />
+
+    <ListView
+        android:id="@+id/listViewAar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appListButton" />
+
+</RelativeLayout>

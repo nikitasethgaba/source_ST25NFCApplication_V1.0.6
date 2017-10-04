@@ -1,0 +1,10 @@
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv"
+    android:padding="10sp"
+    android:layout_marginTop="5sp"
+    android:layout_width="match_parent"
+    android:background="@drawable/relative_selector"
+    android:singleLine="true"
+    android:gravity="center"
+    android:layout_height="match_parent"/>

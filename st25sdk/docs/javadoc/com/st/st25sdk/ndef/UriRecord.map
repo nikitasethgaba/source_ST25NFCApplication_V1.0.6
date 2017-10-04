@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="c37328" href="./NDEFRecord.html" title="com.st.st25sdk.ndef.NDEFRecord" alt="" coords="21,17,113,41"/>
+<area shape="rect" id="node1" href="./NDEFRecord.html" title="&lt;TABLE&gt;" alt="" coords="11,5,123,53"/>
+<area shape="rect" id="c37341" href="./UriRecord.html" title="com.st.st25sdk.ndef.UriRecord" alt="" coords="29,113,104,137"/>
+<area shape="rect" id="node2" href="./UriRecord.html" title="&lt;TABLE&gt;" alt="" coords="19,101,115,149"/>
+<area shape="rect" id="c37342" href="./UriRecord.NdefUriIdCode.html" title="com.st.st25sdk.ndef.UriRecord.NdefUriIdCode" alt="" coords="16,203,117,242"/>
+<area shape="rect" id="node3" href="./UriRecord.NdefUriIdCode.html" title="&lt;TABLE&gt;" alt="" coords="5,198,128,247"/>
+</map>

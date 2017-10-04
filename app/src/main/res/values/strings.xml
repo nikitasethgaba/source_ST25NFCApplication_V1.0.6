@@ -1,0 +1,539 @@
+<resources>
+    <string name="app_name">ST25</string>
+    <string name="www_st_com">www.st.com</string>
+    <string name="st_uri">st.com</string>
+    <string name="app_description">
+        ST25 NFC App is an Android application dedicated to handle the ST NFC tag ST25TA (CLOUD ST25TA02K-P), the dynamic NFC tag M24SR (M24SR Nucleo shield and M24SR Discovery boards), the Dual Interface EEPROMs of the M24LRxx family, and the ST25DV series Dynamic NFC Tags. \n
+        It allows the user to store or read NDEF messages such as NDEF URL, SMS, Email, vCard (including picture), AAR and proprietary messages. \n
+        NDEF Multi-records is also available. \n
+        Specific demonstration features such as FW update, image transfers are available and work with specific firmware and Discovery kits. \n
+    </string>
+    <string name="about">About</string>
+    <string name="version_dialog_header">"App version description</string>
+    <string name="preferred_app">Preferred App.</string>
+    <string name="preferred_applications">Preferred Applications</string>
+    <string name="preferred_application_description">List of \'preferred applications\' associated to sytem actions.\n\nClick on Edit icon if you want to remove an association. When the action occurs, if no more preferred application is associated to this action, Android will display a popup asking the user to choose what to do.</string>
+    <string name="show_only_nfc_actions">Show only NFC actions</string>
+    <string name="show_all_actions">Show all actions</string>
+    <string name="action">Action</string>
+    <string name="edit">Edit</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="update">Update</string>
+    <string name="not_implemented_yet">Not implemented yet!</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="product_unknown">Product unknown</string>
+    <string name="product_version">Product version</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="please_tap_a_nfc_tag">Please tap an NFC tag...</string>
+
+    <string name="aiddescription">aiddescription</string>
+    <string name="servicedesc">servicedesc</string>
+
+    <string name="ndef">NDEF</string>
+    <string name="ndef_details">ndef details</string>
+    <string name="no_ndef_data_or_unknown_data">No NDEF data or unknown data</string>
+    <string name="unknown_data">Unknown data</string>
+    <string name="area_protected_in_read">Area protected in read</string>
+    <string name="area_protected_in_read_click_here_to_unlock">Area protected in read. Click here to unlock it.</string>
+    <string name="error_while_reading_the_area">Error while reading the area</string>
+    <string name="error_no_password_interface">Error! This tag doesn\'t have a password interface!</string>
+
+    <string name="cc_file">CC File</string>
+    <string name="system_file">System File</string>
+    <string name="system_file_length">System file length</string>
+    <string name="tools">Tools</string>
+    <string name="memory">Memory</string>
+    <string name="memory_content">Memory Content</string>
+    <string name="configuration">Configuration</string>
+    <string name="area_security_status">Area Security Status</string>
+
+    <string name="storage_format_id">Storage Format ID</string>
+
+    <string name="nfc_forum">NFC Forum</string>
+    <string name="ndef_editor">Ndef Editor</string>
+    <string name="areas_content_editor">Areas Content Editor</string>
+    <string name="tag_info">Tag Info</string>
+
+
+    <string name="product_features">Product Features</string>
+
+    <string name="cc_file_length_title">CC File Length</string>
+
+    <string name="lri_menus">LRi menus</string>
+    <string name="lriS2k_menus">LRiS2k menus</string>
+    <string name="lriS64k_menus">LRiS64k menus</string>
+
+    <string name="st25tv_menus">ST25TV menus</string>
+    <string name="st25dv02kw_menus">ST25DV02K-W menus</string>
+
+    <string name="m24sr64_menus">M24sr64 menus</string>
+    <string name="m24lr64_menus">M24lr64 menus</string>
+    <string name="m24lr04_menus">M24lr04 menus</string>
+    <string name="st25ta_menus">ST25ta menus</string>
+    <string name="type5_menus">Type5 menus</string>
+    <string name="type4_menus">Type4 menus</string>
+    <string name="iso15693_menus">ISO15693 menus</string>
+
+    <string name="pwm_access_rights">Pwm R/W access rights</string>
+    <string name="pwm_control_config">Pwm Ctrl config</string>
+    <string name="pwm_control_settings"> Pwm Ctrl settings</string>
+    <string name="pwm1Drive">Pwm1 Drive</string>
+    <string name="pwm2Drive">Pwm2 Drive</string>
+    <string name="select_pwm_output_trimming">Select output driver trimming</string>
+    <string name="select_pwm_duality_management">Select pwm duality management</string>
+    <string name="select_pwm">Select pwm drive</string>
+    <string name="full_power">Full power</string>
+    <string name="half_power">Half power</string>
+    <string name="one_quarter_power">One quarter power</string>
+    <string name="three_quarter_power">Three quarter power</string>
+    <string name="trimming_value">Trimming value</string>
+    <string name="change_pwm_drive_configuration">Change pwm drive configuration</string>
+    <string name="change_duality_management">Change pwm duality management</string>
+
+    <string name="full_duplex">Full duplex</string>
+    <string name="freq_reduced">Freq reduced</string>
+    <string name="full_power_while_rf_cmd">1/4 Full power during RF cmds</string>
+    <string name="pwm_set_in_hz_while_rf_cmd">PWM set in HZ during RF cmds</string>
+    <string name="one_quarter_full_power_while_rf_cmd">PWM @ 1/4 full power during RF cmds</string>
+    <string name="freq_reduced_and_one_quarter_full_power_while_rf_cmd"> Freq reduced and PWM @ 1/4 full power during RF cmds</string>
+    <string name="unknown_mgt">Unknown management</string>
+
+    <string name="access_rights">Access rights</string>
+
+    <string name="area_security_status_management">Areas Security Status</string>
+    <string name="security_status_management">Security Status</string>
+    <string name="passwd_management">Password Management</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter current password </string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="passwordless">No Password </string>
+    <string name="password1">Password 1</string>
+    <string name="password2">Password 2</string>
+    <string name="password3">Password 3</string>
+
+    <string name="enter_read_password">Enter read password</string>
+    <string name="enter_write_password">Enter write password</string>
+    <string name="enter_new_read_password">Enter new read password</string>
+    <string name="enter_new_write_password">Enter new write password</string>
+
+    <string name="area_management">Areas Management</string>
+    <string name="sector_management">Sector Management</string>
+    <string name="Sector">Sector</string>
+    <string name="value_of_the_current_sector"> Value of the current sector</string>
+    <string name="memory_test">Memory tests</string>
+
+
+    <string name="unknown_tag">Tag unknown</string>
+    <string name="no_tag">No tag detected</string>
+
+    <string name="unknown_state">State unknown</string>
+    <string name="read_lock">Read lock</string>
+    <string name="write_lock">Write lock</string>
+    <string name="read_unlock">Read unlock</string>
+    <string name="write_unlock">Write unlock</string>
+    <string name="write_lock_permanent">Write lock permanently</string>
+    <string name="permanent_lock">Permanent lock</string>
+    <string name="change_read_pwd">Change read password</string>
+    <string name="change_write_pwd">Change write password</string>
+    <string name="present_read_pwd">Present read password</string>
+    <string name="present_write_pwd">Present write password</string>
+    <string name="present_config_pwd">Present configuration password</string>
+    <string name="change_config_pwd">Change configuration password</string>
+    <string name="lock_configuration">Lock configuration</string>
+
+    <string name="select_an_action">Select an action:</string>
+    <string name="edit_ndef_record">Edit this NDEF Record</string>
+    <string name="delete_ndef_record">Delete this NDEF Record</string>
+    <string name="insert_ndef_record">Insert a NDEF Record</string>
+    <string name="update_ndef_record">Update this NDEF Record</string>
+    <string name="zones_viewer">Zones viewer</string>
+    <string name="ndefs_viewer">NDEF(s) viewer</string>
+
+    <string name="model_description">Model Description</string>
+    <string name="model_type">Model Type</string>
+
+    <string name="st25dv_menus">ST25DV menus</string>
+
+    <string name="desc" translatable="false">placeholder</string>
+    <string name="manufacturer">Manufacturer</string>
+    <string name="Memory_size">Memory size (bytes):</string>
+    <string name="Tech_list">Tech list</string>
+
+    <string name="InformationRetrievalOnGoing">Information retrieval on going ....Please keep reader close to the tag.</string>
+
+    <string name="UID">UID</string>
+    <string name="DSFID">DSFID</string>
+    <string name="AFI">AFI</string>
+    <string name="CCLEN">CCLEN (bytes):</string>
+    <string name="CCFileNotAvailable">CC File not available</string>
+
+    <string name="read_memory">Read Memory</string>
+    <string name="write_memory">Write Memory</string>
+    <string name="dump_memory_to_file">Dump memory to file</string>
+    <string name="fill_memory_from_file">Fill memory from file</string>
+    <string name="erase_memory">Erase memory</string>
+
+    <string name="Magic_Number">Magic Number : 0x</string>
+    <string name="Mapping_Version">Mapping Version : 0x</string>
+    <string name="Read_access">Read access :</string>
+    <string name="Write_access">Write access :</string>
+
+    <string name="MaxRAPDU">Max Read APDU size</string>
+    <string name="MaxCAPDU">Max Write APDU size</string>
+
+    <string name="From">From</string>
+    <string name="byte_address">Byte address:</string>
+    <string name="start_address">Start address:</string>
+    <string name="start_address2">Start address</string>
+    <string name="stop_address">Stop address</string>
+    <string name="number_of_blocks">Number of blocks</string>
+    <string name="number_of_bytes">Number of Bytes:</string>
+    <string name="dump_range_msg">Please specify the memory range that you want to dump to a file:</string>
+    <string name="destination_file">Destination file:</string>
+    <string name="source_file">Source file:</string>
+    <string name="fill_memory_msg">Please select a source file and specify the destination offset at which you want to write those data in Tag\'s memory.</string>
+    <string name="destination_offset">Destination offset:</string>
+    <string name="destination_offset_hex">Destination offset (hex):</string>
+    <string name="file_location">The files are located in internal memory Download folder.</string>
+    <string name="select_source_file">Select source file</string>
+    <string name="please_select_source_file">Please select a source file</string>
+
+    <string name="addr">Addr</string>
+    <string name="blocks">blocks</string>
+    <string name="Block">Block</string>
+    <string name="bytes_per_block">bytes per block</string>
+    <string name="Product_Code">Product Code</string>
+
+    <string name="tag_memory_content">Tag\'s memory content:</string>
+    <string name="tap_on_a_area_to_set_its_permissions">Tap on an area to set its permissions:</string>
+    <string name="text_record">Text record</string>
+    <string name="empty_record">Empty record</string>
+    <string name="mime_record">MIME record</string>
+    <string name="external_record">EXTERNAL record</string>
+    <string name="create_text_record">Create a plain text NDEF record</string>
+    <string name="edit_text_record">Edit this plain text NDEF record</string>
+    <string name="Uri_record">Uri record</string>
+    <string name="uri_id_code_title">URI Id Code</string>
+    <string name="mime_id_code_title">MIME Id Code</string>
+
+    <string name="create_uri_record">Create a uri NDEF record</string>
+    <string name="edit_uri_record">Edit this uri NDEF record</string>
+    <string name="Contact_record">Contact</string>
+    <string name="create_contact_record">Create a vcard NDEF record</string>
+    <string name="edit_contact_record">Edit this vcard NDEF record</string>
+    <string name="Wifi_record">Wifi record</string>
+    <string name="create_wifi_record">Create a Wifi handover NDEF record</string>
+    <string name="edit_wifi_record">Edit this Wifi handover NDEF record</string>
+    <string name="Bluetooth_record">Bluetooth record</string>
+    <string name="BluetoothLe_record">Bluetooth low energy record</string>
+    <string name="create_bluetooth_record">Create a Bluetooth handover NDEF record</string>
+    <string name="create_bluetooth_record_le">Create a Bluetooth low energy handover NDEF record</string>
+    <string name="edit_bluetooth_record">Edit a Bluetooth handover NDEF record</string>
+    <string name="edit_bluetooth_le_record">Edit a Bluetooth low energy handover NDEF record</string>
+    <string name="Sms_record">Sms record</string>
+    <string name="create_sms_record">Create a SMS NDEF record</string>
+    <string name="edit_sms_record">Edit this SMS NDEF record</string>
+    <string name="Email_record">E-mail record</string>
+    <string name="create_email_record">Create an Email NDEF record</string>
+    <string name="edit_email_record">Edit this Email NDEF record</string>
+    <string name="Aar_record">Android App Launcher record</string>
+    <string name="create_aar_record">Create an android app Launcher NDEF record</string>
+    <string name="edit_aar_record">Edit this android app Launcher NDEF record</string>
+    <string name="Multi_records">Multi records</string>
+    <string name="Multi_records_Description">Create a multi record NDEF</string>
+    <string name="create_empty_record">Create an empty NDEF record</string>
+    <string name="edit_empty_record">View this empty NDEF record</string>
+    <string name="create_mime_record">Create an MIME NDEF record</string>
+    <string name="create_external_record">Create an EXTERNAL NDEF record</string>
+    <string name="edit_mime_record">Edit this MIME NDEF record</string>
+    <string name="edit_external_record">Edit this EXTERNAL NDEF record</string>
+
+    <string name="Write_ndef_empty">Empty Ndef record - No data available</string>
+    <string name="Write_ndef_mime">Write Ndef MIME</string>
+    <string name="Write_ndef_text">Write Ndef text</string>
+    <string name="Write_ndef_sms">Write Ndef sms</string>
+    <string name="Write_ndef_email">Write Ndef email</string>
+    <string name="Tel">Tel</string>
+    <string name="Message">Message</string>
+    <string name="choose_records">Pick up Records for NDEF</string>
+
+    <string name="error_during_read_operation">Error during read operation. Read %d bytes</string>
+    <string name="Command_failed">Command failed!</string>
+    <string name="Select_intalled_app">Select installed app</string>
+
+    <string name="area_mem_conf">Area%d memory configuration:</string>
+    <string name="current_mem_conf">Current memory configuration:</string>
+    <string name="select_mem_conf">Select a memory configuration:</string>
+    <string name="one_area">1 Area</string>
+    <string name="two_areas">2 Areas</string>
+    <string name="area1">Area 1</string>
+    <string name="area2">Area 2</string>
+    <string name="area3">Area 3</string>
+    <string name="area4">Area 4</string>
+    <string name="read_permission">Read permission</string>
+    <string name="write_permission">Write permission</string>
+    <string name="not_protected">Not protected</string>
+    <string name="pwd_protected">Pwd protected</string>
+    <string name="permanently_protected">Permanently protected</string>
+    <string name="readable_and_writable">Readable and writable</string>
+    <string name="readable_write_pwd_protected">Readable. Write protected by password</string>
+    <string name="read_and_write_pwd_protected">Read and Write protected by password</string>
+    <string name="readable_write_impossible">Read protected by password. Write impossible (even with password)</string>
+    <string name="change_mem_conf">Change memory configuration</string>
+    <string name="change_configuration">Change configuration</string>
+    <string name="change_permissions">Change R/W permissions</string>
+    <string name="change_area_pwd">Change area password</string>
+    <string name="present_password">Present password</string>
+    <string name="change_password">Change password</string>
+    <string name="lock_block">Lock block</string>
+    <string name="lock_blocks">Lock Block(s)</string>
+    <string name="check_block_status">Check block status</string>
+    <string name="block_locked">Block locked</string>
+    <string name="block_number">Block number</string>
+    <string name="block_status">Block status</string>
+    <string name="locked">Locked</string>
+    <string name="unlocked">Unlocked</string>
+    <string name="unknown">Unknown</string>
+    <string name="lock_screen_title">Enter a block number for which you want to see the status (locked or unlocked) or that you want to lock:</string>
+    <string name="lock_is_permanent">Warning: The Lock is permanent so locked blocks cannot be written anymore.</string>
+    <string name="update_tag">Update TAG</string>
+    <string name="select_memory_area">Select a memory area: </string>
+    <string name="select_permission">Select the permissions: </string>
+    <string name="select_area_password">Select the password for this area: </string>
+    <string name="mem_conf_single_area">1 single area of 2 Kbits.\n(Area protected by a 64 bits password)</string>
+    <string name="mem_conf_two_areas">2 independent areas of 1 Kbits each.\n(Each area protected by a 32 bits password)</string>
+    <string name="tag_updated">Tag updated</string>
+    <string name="command_failed">Command failed!</string>
+    <string name="command_successful">Command successful</string>
+    <string name="tag_not_updated">Tag not updated!</string>
+    <string name="tag_not_in_the_field">Tag not in the field</string>
+    <string name="error_while_reading_the_tag">Error while reading the tag!</string>
+    <string name="error_while_updating_the_tag">Error while updating the tag!</string>
+    <string name="error_while_erasing_the_tag">Error while erasing the tag memory! Please check if some areas are protected in write.</string>
+    <string name="no_password_selected_for_this_area">Error! No password selected for this Area! Please go to \'Area Security Status\' and select a password for this Area.</string>
+    <string name="failed_to_unlock">Failed to unlock the area!</string>
+    <string name="enter_configuration_pwd">Enter configuration password </string>
+    <string name="enter_kill_pwd">Enter kill password </string>
+    <string name="change_kill_pwd">Change kill password </string>
+    <string name="lock_kill_pwd">Lock kill password </string>
+    <string name="change_confidential_pwd">Change confidential mode password </string>
+    <string name="kill_and_confidential_mode_pwd_warning">NB: On ST25TV tags, the \'Kill\' and \'Confidential Mode\' features are using the same password (= password 0).</string>
+    <string name="enter_area_pwd">Enter %s password </string>
+    <string name="enter_area1_pwd">Enter Area1 password </string>
+    <string name="enter_area2_pwd">Enter Area2 password </string>
+    <string name="enter_area3_pwd">Enter Area3 password </string>
+    <string name="enter_area4_pwd">Enter Area4 password </string>
+    <string name="enter_new_configuration_pwd">Enter new configuration password </string>
+    <string name="enter_new_kill_pwd">Enter new kill password </string>
+    <string name="enter_new_confidential_mode_pwd">Enter new confidential mode password </string>
+    <string name="enter_new_area1_pwd">Enter new Area1 password </string>
+    <string name="enter_new_area2_pwd">Enter new Area2 password </string>
+    <string name="enter_new_area3_pwd">Enter new Area3 password </string>
+    <string name="enter_new_area4_pwd">Enter new Area4 password </string>
+    <string name="thirty_two_bits_pwd">(32 bits hexadecimal format)</string>
+    <string name="sixty_four_bits_pwd">(64 bits hexadecimal format)</string>
+    <string name="ninety_six_bits_pwd">(96 bits hexadecimal format)</string>
+    <string name="one_hundred_twenty_height_bits_pwd">(128 bits hexadecimal format)</string>
+    <string name="present_pwd_failed">Present PWD failed!</string>
+    <string name="present_pwd_succeeded">Present PWD succeeded</string>
+    <string name="change_pwd_failed">Change PWD failed!</string>
+    <string name="change_pwd_succeeded">Change PWD succeeded</string>
+    <string name="select_password">Select password:</string>
+    <string name="configuration_password">Configuration password</string>
+    <string name="kill_password">Kill password</string>
+    <string name="area1_password">Area1 password</string>
+    <string name="area2_password">Area2 password</string>
+    <string name="area3_password">Area3 password</string>
+    <string name="area4_password">Area4 password</string>
+    <string name="counter">Counter</string>
+    <string name="signature">Signature</string>
+    <string name="error_while_checking_the_signature">Error while checking signature!</string>
+    <string name="signature_ok">Signature OK</string>
+    <string name="signature_nok">Invalid signature!</string>
+    <string name="check_signature">Check signature</string>
+    <string name="status">Status: </string>
+    <string name="tag_signature">Tag\'s signature:</string>
+    <string name="signature_description">The tag\'s signature allows to check if this tag has been produced and signed by STMicroelectronics.</string>
+    <string name="certificate_not_found">Certificate not found!</string>
+    <string name="tamper_detect">Tamper Detect</string>
+    <string name="tamper_detect_status">Tamper detect status (collected when the tag was powered ON):</string>
+    <string name="confidential_mode">Confidential Mode</string>
+    <string name="enable_confidential_mode">Enable confidential mode</string>
+    <string name="confidential_mode_warning">WARNING: Once the confidential mode enabled, the tag will no more answer to Android phones.\n\nIt will only answer to NFC readers implementing some special commands.\n\nA confirmation will be asked before enabling this confidential mode."</string>
+    <string name="confidential_warning">Please enter Kill/Confidential Password. WARNING! The tag will not be usable anymore on Android phones!</string>
+    <string name="confidential_mode_enabled">Confidential mode enabled</string>
+    <string name="kill">Kill</string>
+    <string name="kill_tag">Kill Tag</string>
+    <string name="tag_killed">Tag killed!</string>
+    <string name="kill_password_updated">Kill password updated</string>
+    <string name="permanently_kill">Permanently kill this tag (a confirmation will be asked):</string>
+    <string name="kill_warning">Please enter Kill Password. WARNING! The kill action is IRREVERSIBLE!</string>
+    <string name="lock_configuration_warning">Please enter Configuration Password. WARNING! The lock action is IRREVERSIBLE!</string>
+    <string name="electronic_article_surveillance">Electronic Article Surveillance</string>
+    <string name="eas">EAS</string>
+    <string name="eas_demo">Electronic Article Surveillance demo</string>
+    <string name="enable_eas">Enable EAS</string>
+    <string name="eas_protection">EAS protection: </string>
+    <string name="eas_not_protected">EAS not protected</string>
+    <string name="eas_pwd_protected">EAS protected by configuration password</string>
+    <string name="eas_permanently_locked">EAS permanently locked</string>
+    <string name="eas_id">EAS ID: (16 bits hex value)</string>
+    <string name="eas_telegram">EAS Telegram:</string>
+    <string name="eas_id_with_description">EAS ID (free to use identifier. 16 bits hex value):</string>
+    <string name="eas_telegram_with_description">EAS Telegram containing article description:\n(32 Bytes max)</string>
+    <string name="eas_alarm_message">An alarm was triggered for this article:</string>
+    <string name="enable_write_counter">Enable write counter:</string>
+    <string name="reset_counter">Reset write counter</string>
+    <string name="st25tv_write_counter_description">When enabled, ST25TV\'s write counter is incremented when the tag\'s EEPROM is successfully written.\n\nIn case of multiple writes, it is incremented only once per RF session.</string>
+    <string name="current_write_counter_value">Current write counter value: </string>
+    <string name="enable_nfc">Enable NFC</string>
+    <string name="nfc_currently_disabled">NFC currently disabled!</string>
+    <string name="tag_configuration_protection">Tag\'s configuration is done through a set of registers. A configuration password should be presented before changing the content of a register.</string>
+    <string name="lock_config_msg">Tag\'s configuration can be permanently locked. In that case, it is not possible to change any register anymore through RF command.</string>
+    <string name="configuration_registers_are_now_locked">Configuration registers are now locked</string>
+
+    <string name="stm24die_mem_conf_one_area">1 single area</string>
+    <string name="stm24die_mem_conf_two_areas">2 areas </string>
+    <string name="stm24die_mem_conf_three_areas">3 areas </string>
+    <string name="stm24die_mem_conf_four_areas">4 areas </string>
+    <string name="stm24die_mem_conf_five_areas">5 areas </string>
+    <string name="stm24die_mem_conf_six_areas">6 areas </string>
+    <string name="stm24die_mem_conf_seven_areas">7 areas </string>
+    <string name="stm24die_mem_conf_eight_areas">8 areas </string>
+
+
+    <string name="Mailbox_management">Mailbox Management</string>
+    <string name="Enable_mailbox">Enable mailbox</string>
+    <string name="Mailbox_enabled">Mailbox enabled</string>
+    <string name="HostPutMsg">Msg put via serial interface</string>
+    <string name="RFPutMsg">Msg put via RF</string>
+    <string name="HostMissMsg">Msg missed by serial interface</string>
+    <string name="RFMissMsg">Msg missed by RF interface</string>
+    <string name="Refresh_status">Refresh status</string>
+    <string name="Reset_mailbox">Reset mailbox</string>
+    <string name="data_transfer">Data Transfer</string>
+    <string name="StartTransfer">Start transfer</string>
+    <string name="StopTransfer">Stop transfer</string>
+    <string name="PauseTransfer">Pause transfer</string>
+    <string name="ResumeTransfer">Resume transfer</string>
+    <string name="Reading_From_Tag">Reading From Tag</string>
+    <string name="Writing_To_Tag">Writing To Tag</string>
+    <string name="Writing_To_Tag_From_File">Writing To Tag from File</string>
+    <string name="Select_Action">Please Select an action first</string>
+    <string name="Select_Buffer_Size">Please Select a buffer size in Bytes</string>
+    <string name="Select_Buffer_From_File">Please Select a file</string>
+    <string name="Buffer_Size_SetByHost">Buffer size is given by host</string>
+    <string name="Action_Selected">Action Selected</string>
+    <string name="Get_Installed_App">Click to get applications installed</string>
+
+    <string name="ByteAddress">Byte Address</string>
+    <string name="Value">Value</string>
+    <string name="Range">Range</string>
+    <string name="Resolution">Resolution</string>
+    <string name="Enable">Enable</string>
+    <string name="Disable">Disable</string>
+
+    <string name="Area">Area</string>
+    <string name="Area1">Area 1</string>
+    <string name="Area2">Area 2</string>
+    <string name="Area3">Area 3</string>
+    <string name="Area4">Area 4</string>
+    <string name="None">None</string>
+    <string name="Size">Size</string>
+    <string name="TOTAL">TOTAL</string>
+    <string name="area_size">Area size</string>
+    <string name="in_bytes">In Bytes</string>
+    <string name="in_blocks">In Blocks</string>
+    <string name="size_in_bytes">Size in Bytes</string>
+    <string name="size_in_blocks">Size in Blocks</string>
+    <string name="remaining_space">Remaining space</string>
+    <string name="move_bottom_edge_to_change_area_sizes">Move the bottom edge of Area1, Area2, Area3 to change the number of areas and their sizes.</string>
+    <string name="area4_will_take_all_the_remaining_space">Area4 will take all the remaining space up to the end of the tag\'s memory.</string>
+    <string name="selected_area">Selected area:</string>
+    <string name="fine_tuning_of_selected_area_end">Fine tuning of selected area\'s end:</string>
+
+    <string name="tlv_type">Tlv type</string>
+    <string name="tlv_control">Tlv control file</string>
+    <string name="tlv_length">Tlv length</string>
+    <string name="tlv_file_id">Tlv File Id</string>
+    <string name="tlv_file_size">Tlv File Size</string>
+    <string name="tlv_read_access">Tlv Read access</string>
+    <string name="tlv_write_access">Tlv Write access</string>
+
+    <string name="ndef_file_number">Ndef File Number</string>
+    <string name="wirepower">Wirepower</string>
+    <string name="rf_enable">RF Enable</string>
+    <string name="i2c_protection">I2C Protection</string>
+    <string name="i2c_watchdog">I2C Watchdog</string>
+    <string name="gpo">GPO Config</string>
+    <string name="event_counter">Event Counter</string>
+    <string name="bits_counter">Bits Counter</string>
+
+    <string name="Get_Contact">Get Contact</string>
+    <string name="Someone">Someone</string>
+    <string name="Address">Address</string>
+    <string name="PhotoQuality">PhotoQuality</string>
+    <string name="vcard_info_text1">* : Capture feature depends on phone capabilities</string>
+    <string name="vcard_info_text2">Photo weight processing is by default set to 80 </string>
+    <string name="vcard_info_text3">Adjust the photo weight for VCard writing feature with the slider according to the available tag size if necessary ...</string>
+    <string name="vcard_info_text4"></string>
+    <string name="vcard_info_text5"></string>
+
+    <string name="register_list">Registers list</string>
+    <string name="dynamic_register_management">Dyn Register Management</string>
+    <string name="register_management">Register Management</string>
+    <string name="update_register">Update register</string>
+    <string name="register_password_required">Configuration password is required to modify registers</string>
+    <string name="register_action_completed">Action completed! Tag updated!</string>
+    <string name="register_action_not_completed">Action failed or cancelled! Tag not updated!</string>
+    <string name="no_register_to_update">No register to update</string>
+    <string name="register_values_in_hex_format">All register values are in hexadecimal format.</string>
+    <string name="chronometer_demo">Stopwatch Transfers</string>
+    <string name="picture_transfers">Picture Transfers</string>
+    <string name="firmware_update">Firmware Update</string>
+    <string name="configuration_protection">Configuration Protection</string>
+    <string name="ndef_cloning">NDEF Cloning</string>
+    <string name="no_more_tag_to_write">No more tag to write</string>
+    <string name="cloning_message1">Please tap a new tag where you want to write this NDEF message. The NDEF message will be written to the tag as soon as you tap it.</string>
+    <string name="cloning_message2">When you\'re done with a tag, you can continue with another tag by simply taping it.</string>
+    <string name="cloning_message3">The cloning is possible even with tags of different type.</string>
+    <string name="cloning_failed">Cloning failed!</string>
+    <string name="cloning_successful">Cloning successful</string>
+    <string name="cloning_not_possible">The tag is write protected. Cloning not possible!</string>
+
+    <string name="Download_picture">Download picture From Tag</string>
+    <string name="Pick_picture_upload">Pick a picture to upload</string>
+    <string name="Take_picture_upload">Take a picture to upload</string>
+    <string name="Select_Firmware">Please Select first  a firmware to update</string>
+    <string name="Select_Picture">Please Select a picture</string>
+
+    <string name="Pick_firmware_upload">Pick a firmware to upload</string>
+
+    <string name="Start">Start</string>
+    <string name="Stop">Stop</string>
+    <string name="Pause">Pause</string>
+    <string name="Resume">Resume</string>
+
+    <string name="counter_configuration">Counter Configuration</string>
+    <string name="lock_counter">Lock Counter</string>
+    <string name="counter_mode">Counter Mode</string>
+    <string name="enable_counter">Enable Counter</string>
+    <string name="no_counter_available">Counter not available</string>
+    <string name="current_counter_value">Current counter value</string>
+    <string name="update_counter_mode">Update Counter Mode</string>
+
+    <string name="select_gpo_conf">GPO configuration:</string>
+    <string name="no_gpo_available">GPO not available for this Tag</string>
+    <string name="gpo_status_management">GPO status</string>
+    <string name="send_interrupt">Send Interrupt on GPO</string>
+
+</resources>

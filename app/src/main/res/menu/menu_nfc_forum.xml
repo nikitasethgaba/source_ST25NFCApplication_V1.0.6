@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="NFC forum" >
+        <menu>
+            <item
+                android:id="@+id/tag_info"
+                android:icon="@drawable/ic_info_outline_black_24dp"
+                android:title="@string/tag_info" />
+            <item
+                android:id="@+id/nfc_ndef_editor"
+                android:icon="@drawable/ic_playlist_play_black_24dp"
+                android:title="@string/ndef_editor" />
+            <item
+                android:id="@+id/cc_file"
+                android:icon="@drawable/ic_closed_caption_black_24dp"
+                android:title="@string/cc_file" />
+        </menu>
+    </item>
+</menu>

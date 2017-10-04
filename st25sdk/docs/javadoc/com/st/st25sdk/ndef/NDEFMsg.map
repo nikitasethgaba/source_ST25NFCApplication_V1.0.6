@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="c11147" href="../NFCTag.html" title="com.st.st25sdk.NFCTag" alt="" coords="15,11,99,47"/>
+<area shape="rect" id="node1" href="../NFCTag.html" title="&lt;TABLE&gt;" alt="" coords="5,5,109,53"/>
+<area shape="rect" id="c11218" href="./NDEFMsg.html" title="com.st.st25sdk.ndef.NDEFMsg" alt="" coords="164,113,239,137"/>
+<area shape="rect" id="node3" href="./NDEFMsg.html" title="&lt;TABLE&gt;" alt="" coords="153,101,249,149"/>
+<area shape="rect" id="c11215" href="./NDEFRecord.html" title="com.st.st25sdk.ndef.NDEFRecord" alt="" coords="155,209,247,233"/>
+<area shape="rect" id="node2" href="./NDEFRecord.html" title="&lt;TABLE&gt;" alt="" coords="145,197,257,245"/>
+<area shape="rect" id="c11237" href="../type4a/NdefFileType4.html" title="com.st.st25sdk.type4a.NdefFileType4" alt="" coords="144,11,259,47"/>
+<area shape="rect" id="node4" href="../type4a/NdefFileType4.html" title="&lt;TABLE&gt;" alt="" coords="133,5,269,53"/>
+<area shape="rect" id="c11290" href="../type5/STAreaContent.html" title="com.st.st25sdk.type5.STAreaContent" alt="" coords="304,11,413,47"/>
+<area shape="rect" id="node5" href="../type5/STAreaContent.html" title="&lt;TABLE&gt;" alt="" coords="293,5,424,53"/>
+</map>

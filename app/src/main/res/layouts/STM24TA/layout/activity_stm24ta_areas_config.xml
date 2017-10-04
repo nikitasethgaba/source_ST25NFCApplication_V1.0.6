@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".type4.AreasListActivity">
+
+    <TextView
+        android:id="@+id/memConfHeaderTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/select_mem_conf"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:typeface="serif"/>
+
+    <RadioGroup
+        android:id="@+id/passwordRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/memConfHeaderTextView"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp" >
+
+        <RadioButton
+            android:id="@+id/singleAreaRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:gravity="left"
+            android:text="@string/stm24die_mem_conf_one_area"
+            android:textColor="@color/st_dark_blue"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/twoAreasRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:gravity="left"
+            android:text="@string/stm24die_mem_conf_two_areas"
+            android:textColor="@color/st_dark_blue"
+            android:textStyle="bold" />
+        <RadioButton
+            android:id="@+id/threeAreasRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:gravity="left"
+            android:text="@string/stm24die_mem_conf_three_areas"
+            android:textColor="@color/st_dark_blue"
+            android:textStyle="bold" />
+        <RadioButton
+            android:id="@+id/fourAreasRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:gravity="left"
+            android:text="@string/stm24die_mem_conf_four_areas"
+            android:textColor="@color/st_dark_blue"
+            android:textStyle="bold" />
+        <RadioButton
+            android:id="@+id/fiveAreasRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:gravity="left"
+            android:text="@string/stm24die_mem_conf_five_areas"
+            android:textColor="@color/st_dark_blue"
+            android:textStyle="bold" />
+        <RadioButton
+            android:id="@+id/sixAreasRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:gravity="left"
+            android:text="@string/stm24die_mem_conf_six_areas"
+            android:textColor="@color/st_dark_blue"
+            android:textStyle="bold" />
+        <RadioButton
+            android:id="@+id/sevenAreasRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:gravity="left"
+            android:text="@string/stm24die_mem_conf_seven_areas"
+            android:textColor="@color/st_dark_blue"
+            android:textStyle="bold" />
+        <RadioButton
+            android:id="@+id/eightAreasRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:gravity="left"
+            android:text="@string/stm24die_mem_conf_eight_areas"
+            android:textColor="@color/st_dark_blue"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/updateTagButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update_tag"
+        android:layout_below="@+id/passwordRadioGroup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+</RelativeLayout>

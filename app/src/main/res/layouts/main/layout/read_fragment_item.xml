@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+    
+    <TextView android:id="@+id/addrTextView"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+		android:textSize="16dp"
+		android:typeface="monospace"
+    />
+        
+    <TextView android:id="@+id/hexValueTextView"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+		android:textSize="16dp"
+    	android:layout_toRightOf ="@id/addrTextView"
+        android:typeface="monospace"
+    />
+
+	<TextView android:id="@+id/asciiValueTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="16dp"
+		android:layout_toRightOf ="@id/hexValueTextView"
+		android:typeface="monospace"
+		/>
+    
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="st25sdk.st25-sdk-0.6.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/st25sdk/build/android/build/libs/st25-sdk-0.6.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="ST25TV Features"
+        android:id="@+id/m24sr_features">
+        <menu>
+            <item
+                android:id="@+id/sys_file"
+                android:icon="@drawable/ic_perm_data_setting_black_24dp"
+                android:title="@string/system_file"/>
+            <item
+                android:id="@+id/memory_dump"
+                android:icon="@drawable/ic_memory_black_24dp"
+                android:title="@string/memory_content"/>
+
+            <item
+                android:id="@+id/register_management"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/register_management"/>
+
+            <item
+                android:id="@+id/configuration_protection"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/configuration_protection"/>
+
+            <item
+                android:id="@+id/configuration"
+                android:icon="@drawable/ic_memory_st_dark_blue_24dp"
+                android:title="@string/area_management"/>
+            <item
+                android:id="@+id/areas_ndef_editor"
+                android:icon="@drawable/ic_playlist_play_black_24dp"
+                android:title="@string/areas_content_editor" />
+            <item
+                android:id="@+id/area_security_status_management"
+                android:icon="@drawable/ic_security_black_24dp"
+                android:title="@string/area_security_status_management"/>
+
+            <item
+                android:id="@+id/counter_menu"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/counter" />
+
+            <item
+                android:id="@+id/tamper_detect_menu"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/tamper_detect" />
+
+            <item
+                android:id="@+id/lock_block_menu"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/lock_blocks" />
+
+            <item
+                android:id="@+id/confidential_mode_menu"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/confidential_mode" />
+
+            <item
+                android:id="@+id/kill_menu"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/kill_tag" />
+
+            <item
+                android:id="@+id/eas_menu"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/electronic_article_surveillance" />
+
+        </menu>
+    </item>
+
+
+</menu>

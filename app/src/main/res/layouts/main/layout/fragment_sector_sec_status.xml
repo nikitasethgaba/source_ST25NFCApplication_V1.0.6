@@ -1,0 +1,291 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_sec_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="b7 b6 b5" />
+
+            <TextView
+                android:padding="3dip"
+                android:text="| b4 b3" />
+
+            <TextView
+                android:padding="3dip"
+                android:text="| b2 b1" />
+
+            <TextView
+                android:padding="3dip"
+                android:text="b0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="0" />
+
+            <TextView
+                android:padding="3dip"
+                android:text="| Password\n| control bits" />
+
+            <TextView
+                android:padding="3dip"
+                android:text="| R/W\n| protection bits" />
+
+            <TextView
+                android:padding="3dip"
+                android:text="| Sector locked" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="_____________________________________________" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="Sector Lock" />
+
+            <TextView
+                android:padding="3dip"
+                android:text="| b2, b1" />
+
+            <TextView
+                android:padding="3dip"
+                android:text="| Sector access\n| when password\n| presented" />
+
+
+            <TextView
+                android:padding="3dip"
+                android:text="| Sector access\n| when password\n| not presented" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="0" />
+
+            <TextView
+                android:padding="3dip"
+                android:text="| xx        " />
+
+            <TextView
+                android:padding="1dip"
+                android:text="| Read|Write " />
+
+
+            <TextView
+                android:padding="1dip"
+                android:text="| Read/Write" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="1" />
+
+            <TextView
+                android:padding="3dip"
+                android:text="| 00" />
+
+            <TextView
+                android:padding="1dip"
+                android:text="| Read/Write" />
+
+
+            <TextView
+                android:padding="1dip"
+                android:text="| Read/No Write" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="1" />
+
+            <TextView
+                android:padding="3dip"
+                android:text="| 01" />
+
+            <TextView
+                android:padding="1dip"
+                android:text="| Read/Write" />
+
+
+            <TextView
+                android:padding="1dip"
+                android:text="| Read/Write" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="1" />
+
+            <TextView
+                android:padding="3dip"
+                android:text="| 10" />
+
+            <TextView
+                android:padding="1dip"
+                android:text="| Read/Write" />
+
+
+            <TextView
+                android:padding="1dip"
+                android:text="| No Read/No Write" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="1" />
+
+            <TextView
+                android:padding="3dip"
+                android:text="| 11" />
+
+            <TextView
+                android:padding="1dip"
+                android:text="| Read/No Write" />
+
+
+            <TextView
+                android:padding="1dip"
+                android:text="| No Read/No Write" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="_____________________________________________" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="b4, b3" />
+
+            <TextView
+                android:padding="3dip"
+                android:text="| Password" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="00" />
+
+            <TextView
+                android:padding="3dip"
+                android:text="| The sector is not protected by password" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="01" />
+
+            <TextView
+                android:padding="3dip"
+                android:text="| The sector is protected by password 1" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="10" />
+
+            <TextView
+                android:padding="3dip"
+                android:text="| The sector is protected by password 2" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="11" />
+
+            <TextView
+                android:padding="3dip"
+                android:text="| The sector is protected by password 3" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="_____________________________________________" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/security_sector_input"
+        android:text="@string/value_of_the_current_sector" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:id="@+id/security_sector_value"
+        android:enabled="true" />
+
+    <Button
+        android:id="@+id/updateTagButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update_tag"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+</LinearLayout>

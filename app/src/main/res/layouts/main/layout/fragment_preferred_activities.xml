@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sys_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".generic.PreferredApplicationActivity">
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/preferred_application_description" />
+
+    <RadioGroup
+        android:id="@+id/filterRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descriptionTextView"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp" >
+
+        <RadioButton
+            android:id="@+id/showOnlyNfcRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:gravity="left"
+            android:text="@string/show_only_nfc_actions"
+            android:textColor="@color/st_dark_blue"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/showAllRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:gravity="left"
+            android:text="@string/show_all_actions"
+            android:textColor="@color/st_dark_blue"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <TableLayout
+        android:id="@+id/headerTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filterRadioGroup"
+        android:layout_marginTop="10dp">
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerTableLayout"
+        android:fillViewport="true">
+
+        <TableLayout
+            android:id="@+id/preferredAppTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>

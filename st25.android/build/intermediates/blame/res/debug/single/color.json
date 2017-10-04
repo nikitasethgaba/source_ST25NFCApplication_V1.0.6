@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/nikitaseth/Downloads/source_ST25NFCApplication_V1.0.6/st25.android/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/nikitaseth/.android/build-cache/f84e46fbab79d3216693f261496272342e6e0711/output/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/Users/nikitaseth/Downloads/source_ST25NFCApplication_V1.0.6/st25.android/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/Users/nikitaseth/.android/build-cache/f84e46fbab79d3216693f261496272342e6e0711/output/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/Users/nikitaseth/Downloads/source_ST25NFCApplication_V1.0.6/st25.android/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/Users/nikitaseth/.android/build-cache/f84e46fbab79d3216693f261496272342e6e0711/output/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/nikitaseth/Downloads/source_ST25NFCApplication_V1.0.6/st25.android/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/Users/nikitaseth/.android/build-cache/f84e46fbab79d3216693f261496272342e6e0711/output/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/Users/nikitaseth/Downloads/source_ST25NFCApplication_V1.0.6/st25.android/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/nikitaseth/.android/build-cache/f84e46fbab79d3216693f261496272342e6e0711/output/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/nikitaseth/Downloads/source_ST25NFCApplication_V1.0.6/st25.android/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/Users/nikitaseth/.android/build-cache/f84e46fbab79d3216693f261496272342e6e0711/output/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/Users/nikitaseth/Downloads/source_ST25NFCApplication_V1.0.6/st25.android/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/nikitaseth/.android/build-cache/f84e46fbab79d3216693f261496272342e6e0711/output/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/Users/nikitaseth/Downloads/source_ST25NFCApplication_V1.0.6/st25.android/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/nikitaseth/.android/build-cache/f84e46fbab79d3216693f261496272342e6e0711/output/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/nikitaseth/Downloads/source_ST25NFCApplication_V1.0.6/st25.android/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/Users/nikitaseth/.android/build-cache/f84e46fbab79d3216693f261496272342e6e0711/output/res/color/abc_primary_text_material_light.xml"
+    }
+]

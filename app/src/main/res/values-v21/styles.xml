@@ -1,0 +1,33 @@
+<resources>
+
+    <style name="STAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:colorPrimary">@color/st_light_blue</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:colorPrimaryDark">@color/st_dark_blue</item>
+        <item name="colorAccent">@color/st_light_blue</item>
+        <item name="android:colorForeground">@color/st_light_blue</item>
+        <item name="android:navigationBarColor">@color/st_dark_blue</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:textColorPrimary">@color/st_dark_blue</item>
+        <item name="android:textColorPrimaryInverse">@color/st_dark_blue</item>
+        <item name="android:textColorSecondary">@color/st_dark_blue</item>
+        <item name="android:textColorSecondaryInverse">@color/st_light_purple</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColor">@color/st_dark_blue</item>
+        <item name="android:buttonStyle">@style/STAppButton</item>
+    </style>
+
+    <style name="STAppTheme.NoActionBar" parent="STAppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="STAppButton" parent="android:style/Widget.Button" >
+        <item name="android:textColor">@color/st_dark_blue</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/relative_selector</item>
+        <item name="android:minHeight">30dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="ST25DV Features"
+        android:id="@+id/st25dv_features">
+        <menu>
+            <item
+                android:id="@+id/sys_file"
+                android:icon="@drawable/ic_perm_data_setting_black_24dp"
+                android:title="@string/system_file"/>
+            <item
+                android:id="@+id/memory_dump"
+                android:icon="@drawable/ic_memory_black_24dp"
+                android:title="@string/memory_content"/>
+            <item
+                android:id="@+id/register_management"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/register_management"/>
+            <item
+                android:id="@+id/dynamic_register_management"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/dynamic_register_management"/>
+            <item
+                android:id="@+id/configuration_protection"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/configuration_protection"/>
+            <item
+                android:id="@+id/configuration"
+                android:icon="@drawable/ic_memory_black_24dp"
+                android:title="@string/area_management"/>
+            <item
+                android:id="@+id/areas_ndef_editor"
+                android:icon="@drawable/ic_playlist_play_black_24dp"
+                android:title="@string/areas_content_editor" />
+            <item
+                android:id="@+id/area_security_status_management"
+                android:icon="@drawable/ic_security_black_24dp"
+                android:title="@string/area_security_status_management"/>
+
+            <item
+                android:id="@+id/mailbox_management"
+                android:icon="@drawable/ic_markunread_mailbox_black_24dp"
+                android:title="@string/Mailbox_management"/>
+            <item
+                android:id="@+id/data_transfer"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/data_transfer"
+                />
+        </menu>
+    </item>
+
+    <item android:title="ST25DV Demonstrations"
+        android:id="@+id/st25dv_demonstrations">
+        <menu>
+            <item
+                android:id="@+id/stopwatch_transfers"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/chronometer_demo"
+                />
+            <item
+                android:id="@+id/firmware_update"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/firmware_update"
+                />
+            <item
+                android:id="@+id/picture_transfers"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/picture_transfers"
+                />
+        </menu>
+    </item>
+
+</menu>

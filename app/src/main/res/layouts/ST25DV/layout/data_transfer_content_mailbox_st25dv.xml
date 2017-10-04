@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_mailbox_st25dv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:orientation="vertical"
+    tools:context=".type5.st25dv.ST25DVMailboxDataTransferActivity"
+    >
+
+
+    <TextView
+        android:id="@+id/data_transfer_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/Select_Action">
+    </TextView>
+
+    <ListView
+        android:id="@+id/data_transfer_mailbox_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </ListView>
+
+    <include layout="@layout/transfer_tasks_st25dv" />
+
+</LinearLayout>

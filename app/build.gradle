@@ -1,0 +1,129 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.st.st25nfc"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 4
+        versionName "1.0.6"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        setProperty("archivesBaseName", "ST25NFCApplication-signedV$versionName")
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    task generate_javadoc(overwrite: true, dependsOn: build) {
+
+        setDescription('Generates Javadoc API documentation with UMLGraph diagrams')
+        setGroup(JavaBasePlugin.DOCUMENTATION_GROUP)
+
+        doLast {
+            def javaFilePath = file('src/main/java')
+            if (javaFilePath.exists()) {
+                ant.javadoc(classpath: "UmlGraph.jar",
+                        sourcepath: file('./src/main/java'),
+                        packagenames: '*',
+                        destdir: "../build/javadoc/",
+                        private: 'true',
+                        docletpath: 'UmlGraph.jar',
+                        charset: 'UTF-8',
+                        encoding: 'UTF-8',
+                        docencoding: 'UTF-8') {
+                    doclet(name: 'org.umlgraph.doclet.UmlGraphDoc')
+                            {
+                                param(name: '-inferrel')
+                                param(name: '-inferdep')
+                                param(name: '-qualify')
+                                param(name: '-postfixpackage')
+                                param(name: '-hide', value: 'java.*')
+                                param(name: '-collpackages', value: 'java.util.*')
+                                param(name: '-nodefontsize', value: '9')
+                                param(name: '-nodefontpackagesize', value: '7')
+                                param(name: '-link', value: 'http://java.sun.com/j2se/1.5.0/docs/guide/javadoc/doclet/spec')
+                                param(name: '-link', value: 'http://java.sun.com/j2se/1.5/docs/api')
+                                param(name: '-edgecolor', value: '#002052')
+                                param(name: '-edgefontcolor', value: '#002052')
+                                param(name: '-nodefillcolor', value: '#39a9dc')
+                                param(name: '-nodefontcolor', value: '#002052')
+
+                            }
+                }
+            } else {
+                print("!!! Cannot find source path !!!");
+            }
+        }
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/java/UI']
+            res.srcDirs = ['src/main/res/',
+                           'src/main/res/layouts/LRix',
+                           'src/main/res/layouts/ST25TV',
+                           'src/main/res/layouts/ST25DV',
+                           'src/main/res/layouts/STM24TA',
+                           'src/main/res/layouts/STM24LR',
+                           'src/main/res/layouts/main',
+                           'src/main/res/layouts/Ndef']
+        }
+    }
+}
+
+gradle.taskGraph.whenReady { graph ->
+    if (graph.hasTask(generateDebugSources)) {
+        print "=== Debug Build ===\n"
+    } else {
+        print "=== Release Build ===\n"
+    }
+}
+
+repositories {
+    flatDir {
+        dirs project(':st25sdk').rootDir.absolutePath + '/st25sdk/libs/java'
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+
+    compile project(':st25sdk')
+    compile project(path: ':st25.android')
+
+
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+
+    // JUnit for instrumented tests
+    androidTestCompile 'junit:junit:4.12'
+    androidTestCompile project(':st25sdk_test')
+
+    // Optional -- Hamcrest library
+    androidTestCompile 'org.hamcrest:hamcrest-library:1.3'
+
+    androidTestCompile ('com.android.support.test:runner:0.5') {
+        exclude group: 'com.android.support'
+    }
+
+    androidTestCompile ('com.android.support.test:rules:0.5') {
+        exclude group: 'com.android.support'
+    }
+
+    androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.1'
+
+}
